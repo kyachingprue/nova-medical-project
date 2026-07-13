@@ -20,7 +20,7 @@ const Navbar = () => {
           <NavLink to="/contact-us">Contact Us</NavLink>
         </div>
         <div>
-          <button className="py-2 px-4 rounded bg-amber-900 text-white active:scale-95 cursor-pointer">
+          <button className="py-2 px-4 rounded bg-blue-900 text-white active:scale-95 cursor-pointer">
             Get Started
           </button>
         </div>
