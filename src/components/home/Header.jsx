@@ -5,7 +5,7 @@ import { FaPhone } from "react-icons/fa";
 const Header = () => {
   return (
     <header
-      className="pt-16 bg-cover bg-center"
+      className="pt-16 mt-16 bg-cover bg-center"
       style={{ backgroundImage: `url(${banner})` }}
     >
       <section className="flex flex-col items-center justify-center h-full md:flex-row md:justify-between max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto">

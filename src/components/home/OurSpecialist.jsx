@@ -29,24 +29,24 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white text-center py-1 text-sm">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
                 size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
                 size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>
@@ -59,24 +59,24 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white text-center py-1 text-sm">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
                 size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
                 size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>
@@ -89,24 +89,24 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white py-1 text-center text-sm">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row ">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
                 size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
                 size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>
@@ -119,24 +119,24 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white text-center py-1 text-sm">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
                 size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
                 size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>
@@ -149,24 +149,24 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white text-center p-1 text-sm">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
                 size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
                 size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>
@@ -179,24 +179,22 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white text-center py-1 text-sm">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
-                size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
-                size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>
@@ -209,24 +207,22 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white text-center py-1 text-sm">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
-                size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
-                size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>
@@ -239,24 +235,22 @@ const OurSpecialist = () => {
             className="w-full h-full object-cover rounded-3xl"
           />
           <div className="bg-fuchsia-900/90 px-4 rounded-2xl absolute bottom-2 right-9 w-50 h-30">
-            <h3 className="text-2xl font-bold text-white text-center py-2">
+            <h3 className="text-2xl font-bold text-white text-center pt-2">
               Ubied Uma
             </h3>
-            <p className="text-white text-center text-sm">Psychologist</p>
-            <div className="flex items-center justify-center gap-3 flex-row py-2">
+            <p className="text-white text-center text-sm py-1">Psychologist</p>
+            <div className="flex items-center justify-center gap-3 flex-row">
               <SlSocialFacebook
                 color="white"
-                className="bg-blue-500 rounded-xl w-8 h-8"
+                className="bg-blue-500 rounded-full p-1.5 w-10 h-10"
               />
               <TiSocialLinkedin
-                size={28}
                 color="white"
-                className="bg-blue-800 rounded-xl w-8 h-8"
+                className="bg-blue-800 rounded-full p-1.5 w-10 h-10"
               />
               <SlSocialGithub
-                size={28}
                 color="black"
-                className="bg-white rounded-xl w-8 h-8"
+                className="bg-white rounded-full p-1.5 w-10 h-10"
               />
             </div>
           </div>

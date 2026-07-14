@@ -3,7 +3,7 @@ import { NavLink , Link} from "react-router";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-50">
+    <nav className="fixed top-0 left-0 w-full z-50 shadow-lg bg-gray-50">
       <section className="flex justify-between items-center max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-4 text-black">
         <div>
           <Link to="/">

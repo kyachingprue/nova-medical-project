@@ -1,4 +1,5 @@
 import AboutMental from "../../components/home/AboutMental";
+import GetAQuote from "../../components/home/GetAQuote";
 import Header from "../../components/home/Header";
 import HowWeWork from "../../components/home/HowWeWork";
 import OurSpecialist from "../../components/home/OurSpecialist";
@@ -13,7 +14,8 @@ const Home = () => {
       <AboutMental />
       <HowWeWork />
       <WhyChooseUs />
-      <OurSpecialist/>
+      <OurSpecialist />
+      <GetAQuote/>
     </div>
   );
 };
