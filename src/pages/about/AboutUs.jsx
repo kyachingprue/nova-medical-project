@@ -1,9 +1,9 @@
-
+import AboutBanner from "../../components/aboutUs/AboutBanner";
 
 const AboutUs = () => {
   return (
     <div>
-<h3>This is About Us Pages</h3>
+      <AboutBanner/>
     </div>
   );
 };
