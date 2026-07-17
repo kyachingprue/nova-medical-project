@@ -1,4 +1,5 @@
 import AboutMental from "../../components/home/AboutMental";
+import Blogs from "../../components/home/Blogs";
 import GetAQuote from "../../components/home/GetAQuote";
 import Header from "../../components/home/Header";
 import HowWeWork from "../../components/home/HowWeWork";
@@ -15,7 +16,8 @@ const Home = () => {
       <HowWeWork />
       <WhyChooseUs />
       <OurSpecialist />
-      <GetAQuote/>
+      <GetAQuote />
+      <Blogs/>
     </div>
   );
 };

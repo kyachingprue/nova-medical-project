@@ -14,12 +14,12 @@ const GetAQuote = () => {
 
       <section className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="text-center max-w-4xl mx-auto mb-14">
+        <div className="text-center max-w-4xl mx-auto mb-20">
           <p className="text-white tracking-[3px] uppercase font-semibold mb-4">
             Get A Quote
           </p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white">
+          <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-white">
             Take <span className="text-amber-300">The First Step</span> Toward A
             <span className="text-amber-300"> Healthier </span>
             Mind.
