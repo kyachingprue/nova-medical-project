@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "slug": "depression-article-1",
+    "category": "Depression",
+    "releaseDate": "2026-02-10",
+    "title": "Depression: Practical Guide #1",
+    "description": "This educational article explains Depression in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 1",
+      "designation": "Mental Health Specialist",
+      "experience": "5 Years"
+    },
+    "image": "https://picsum.photos/seed/medical1/800/600",
+    "readTime": "5 min read",
+    "featured": true,
+    "views": 1037,
+    "likes": 109,
+    "comments": 10,
+    "tags": [
+      "Depression",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 2,
+    "slug": "depression-article-2",
+    "category": "Depression",
+    "releaseDate": "2026-03-11",
+    "title": "Depression: Practical Guide #2",
+    "description": "This educational article explains Depression in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 2",
+      "designation": "Mental Health Specialist",
+      "experience": "6 Years"
+    },
+    "image": "https://picsum.photos/seed/medical2/800/600",
+    "readTime": "6 min read",
+    "featured": false,
+    "views": 1074,
+    "likes": 118,
+    "comments": 11,
+    "tags": [
+      "Depression",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 3,
+    "slug": "depression-article-3",
+    "category": "Depression",
+    "releaseDate": "2026-04-12",
+    "title": "Depression: Practical Guide #3",
+    "description": "This educational article explains Depression in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 3",
+      "designation": "Mental Health Specialist",
+      "experience": "7 Years"
+    },
+    "image": "https://picsum.photos/seed/medical3/800/600",
+    "readTime": "7 min read",
+    "featured": false,
+    "views": 1111,
+    "likes": 127,
+    "comments": 12,
+    "tags": [
+      "Depression",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 4,
+    "slug": "depression-article-4",
+    "category": "Depression",
+    "releaseDate": "2026-05-13",
+    "title": "Depression: Practical Guide #4",
+    "description": "This educational article explains Depression in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 4",
+      "designation": "Mental Health Specialist",
+      "experience": "8 Years"
+    },
+    "image": "https://picsum.photos/seed/medical4/800/600",
+    "readTime": "8 min read",
+    "featured": false,
+    "views": 1148,
+    "likes": 136,
+    "comments": 13,
+    "tags": [
+      "Depression",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 5,
+    "slug": "depression-article-5",
+    "category": "Depression",
+    "releaseDate": "2026-06-14",
+    "title": "Depression: Practical Guide #5",
+    "description": "This educational article explains Depression in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 5",
+      "designation": "Mental Health Specialist",
+      "experience": "9 Years"
+    },
+    "image": "https://picsum.photos/seed/medical5/800/600",
+    "readTime": "9 min read",
+    "featured": false,
+    "views": 1185,
+    "likes": 145,
+    "comments": 14,
+    "tags": [
+      "Depression",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 6,
+    "slug": "anxiety-article-1",
+    "category": "Anxiety",
+    "releaseDate": "2026-01-10",
+    "title": "Anxiety: Practical Guide #1",
+    "description": "This educational article explains Anxiety in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 6",
+      "designation": "Mental Health Specialist",
+      "experience": "5 Years"
+    },
+    "image": "https://picsum.photos/seed/medical6/800/600",
+    "readTime": "5 min read",
+    "featured": true,
+    "views": 1222,
+    "likes": 154,
+    "comments": 10,
+    "tags": [
+      "Anxiety",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 7,
+    "slug": "anxiety-article-2",
+    "category": "Anxiety",
+    "releaseDate": "2026-02-11",
+    "title": "Anxiety: Practical Guide #2",
+    "description": "This educational article explains Anxiety in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 7",
+      "designation": "Mental Health Specialist",
+      "experience": "6 Years"
+    },
+    "image": "https://picsum.photos/seed/medical7/800/600",
+    "readTime": "6 min read",
+    "featured": false,
+    "views": 1259,
+    "likes": 163,
+    "comments": 11,
+    "tags": [
+      "Anxiety",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 8,
+    "slug": "anxiety-article-3",
+    "category": "Anxiety",
+    "releaseDate": "2026-03-12",
+    "title": "Anxiety: Practical Guide #3",
+    "description": "This educational article explains Anxiety in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 8",
+      "designation": "Mental Health Specialist",
+      "experience": "7 Years"
+    },
+    "image": "https://picsum.photos/seed/medical8/800/600",
+    "readTime": "7 min read",
+    "featured": false,
+    "views": 1296,
+    "likes": 172,
+    "comments": 12,
+    "tags": [
+      "Anxiety",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 9,
+    "slug": "anxiety-article-4",
+    "category": "Anxiety",
+    "releaseDate": "2026-04-13",
+    "title": "Anxiety: Practical Guide #4",
+    "description": "This educational article explains Anxiety in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 9",
+      "designation": "Mental Health Specialist",
+      "experience": "8 Years"
+    },
+    "image": "https://picsum.photos/seed/medical9/800/600",
+    "readTime": "8 min read",
+    "featured": false,
+    "views": 1333,
+    "likes": 181,
+    "comments": 13,
+    "tags": [
+      "Anxiety",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 10,
+    "slug": "anxiety-article-5",
+    "category": "Anxiety",
+    "releaseDate": "2026-05-14",
+    "title": "Anxiety: Practical Guide #5",
+    "description": "This educational article explains Anxiety in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 10",
+      "designation": "Mental Health Specialist",
+      "experience": "9 Years"
+    },
+    "image": "https://picsum.photos/seed/medical10/800/600",
+    "readTime": "9 min read",
+    "featured": false,
+    "views": 1370,
+    "likes": 190,
+    "comments": 14,
+    "tags": [
+      "Anxiety",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 11,
+    "slug": "wellness-article-1",
+    "category": "Wellness",
+    "releaseDate": "2026-06-10",
+    "title": "Wellness: Practical Guide #1",
+    "description": "This educational article explains Wellness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 11",
+      "designation": "Mental Health Specialist",
+      "experience": "5 Years"
+    },
+    "image": "https://picsum.photos/seed/medical11/800/600",
+    "readTime": "5 min read",
+    "featured": true,
+    "views": 1407,
+    "likes": 199,
+    "comments": 10,
+    "tags": [
+      "Wellness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 12,
+    "slug": "wellness-article-2",
+    "category": "Wellness",
+    "releaseDate": "2026-01-11",
+    "title": "Wellness: Practical Guide #2",
+    "description": "This educational article explains Wellness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 12",
+      "designation": "Mental Health Specialist",
+      "experience": "6 Years"
+    },
+    "image": "https://picsum.photos/seed/medical12/800/600",
+    "readTime": "6 min read",
+    "featured": false,
+    "views": 1444,
+    "likes": 208,
+    "comments": 11,
+    "tags": [
+      "Wellness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 13,
+    "slug": "wellness-article-3",
+    "category": "Wellness",
+    "releaseDate": "2026-02-12",
+    "title": "Wellness: Practical Guide #3",
+    "description": "This educational article explains Wellness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 13",
+      "designation": "Mental Health Specialist",
+      "experience": "7 Years"
+    },
+    "image": "https://picsum.photos/seed/medical13/800/600",
+    "readTime": "7 min read",
+    "featured": false,
+    "views": 1481,
+    "likes": 217,
+    "comments": 12,
+    "tags": [
+      "Wellness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 14,
+    "slug": "wellness-article-4",
+    "category": "Wellness",
+    "releaseDate": "2026-03-13",
+    "title": "Wellness: Practical Guide #4",
+    "description": "This educational article explains Wellness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 14",
+      "designation": "Mental Health Specialist",
+      "experience": "8 Years"
+    },
+    "image": "https://picsum.photos/seed/medical14/800/600",
+    "readTime": "8 min read",
+    "featured": false,
+    "views": 1518,
+    "likes": 226,
+    "comments": 13,
+    "tags": [
+      "Wellness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 15,
+    "slug": "wellness-article-5",
+    "category": "Wellness",
+    "releaseDate": "2026-04-14",
+    "title": "Wellness: Practical Guide #5",
+    "description": "This educational article explains Wellness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 15",
+      "designation": "Mental Health Specialist",
+      "experience": "9 Years"
+    },
+    "image": "https://picsum.photos/seed/medical15/800/600",
+    "readTime": "9 min read",
+    "featured": false,
+    "views": 1555,
+    "likes": 235,
+    "comments": 14,
+    "tags": [
+      "Wellness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 16,
+    "slug": "mindfulness-article-1",
+    "category": "Mindfulness",
+    "releaseDate": "2026-05-10",
+    "title": "Mindfulness: Practical Guide #1",
+    "description": "This educational article explains Mindfulness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 16",
+      "designation": "Mental Health Specialist",
+      "experience": "5 Years"
+    },
+    "image": "https://picsum.photos/seed/medical16/800/600",
+    "readTime": "5 min read",
+    "featured": true,
+    "views": 1592,
+    "likes": 244,
+    "comments": 10,
+    "tags": [
+      "Mindfulness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 17,
+    "slug": "mindfulness-article-2",
+    "category": "Mindfulness",
+    "releaseDate": "2026-06-11",
+    "title": "Mindfulness: Practical Guide #2",
+    "description": "This educational article explains Mindfulness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 17",
+      "designation": "Mental Health Specialist",
+      "experience": "6 Years"
+    },
+    "image": "https://picsum.photos/seed/medical17/800/600",
+    "readTime": "6 min read",
+    "featured": false,
+    "views": 1629,
+    "likes": 253,
+    "comments": 11,
+    "tags": [
+      "Mindfulness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 18,
+    "slug": "mindfulness-article-3",
+    "category": "Mindfulness",
+    "releaseDate": "2026-01-12",
+    "title": "Mindfulness: Practical Guide #3",
+    "description": "This educational article explains Mindfulness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 18",
+      "designation": "Mental Health Specialist",
+      "experience": "7 Years"
+    },
+    "image": "https://picsum.photos/seed/medical18/800/600",
+    "readTime": "7 min read",
+    "featured": false,
+    "views": 1666,
+    "likes": 262,
+    "comments": 12,
+    "tags": [
+      "Mindfulness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 19,
+    "slug": "mindfulness-article-4",
+    "category": "Mindfulness",
+    "releaseDate": "2026-02-13",
+    "title": "Mindfulness: Practical Guide #4",
+    "description": "This educational article explains Mindfulness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 19",
+      "designation": "Mental Health Specialist",
+      "experience": "8 Years"
+    },
+    "image": "https://picsum.photos/seed/medical19/800/600",
+    "readTime": "8 min read",
+    "featured": false,
+    "views": 1703,
+    "likes": 271,
+    "comments": 13,
+    "tags": [
+      "Mindfulness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 20,
+    "slug": "mindfulness-article-5",
+    "category": "Mindfulness",
+    "releaseDate": "2026-03-14",
+    "title": "Mindfulness: Practical Guide #5",
+    "description": "This educational article explains Mindfulness in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 20",
+      "designation": "Mental Health Specialist",
+      "experience": "9 Years"
+    },
+    "image": "https://picsum.photos/seed/medical20/800/600",
+    "readTime": "9 min read",
+    "featured": false,
+    "views": 1740,
+    "likes": 280,
+    "comments": 14,
+    "tags": [
+      "Mindfulness",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 21,
+    "slug": "relaxation-article-1",
+    "category": "Relaxation",
+    "releaseDate": "2026-04-10",
+    "title": "Relaxation: Practical Guide #1",
+    "description": "This educational article explains Relaxation in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 21",
+      "designation": "Mental Health Specialist",
+      "experience": "5 Years"
+    },
+    "image": "https://picsum.photos/seed/medical21/800/600",
+    "readTime": "5 min read",
+    "featured": true,
+    "views": 1777,
+    "likes": 289,
+    "comments": 10,
+    "tags": [
+      "Relaxation",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 22,
+    "slug": "relaxation-article-2",
+    "category": "Relaxation",
+    "releaseDate": "2026-05-11",
+    "title": "Relaxation: Practical Guide #2",
+    "description": "This educational article explains Relaxation in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 22",
+      "designation": "Mental Health Specialist",
+      "experience": "6 Years"
+    },
+    "image": "https://picsum.photos/seed/medical22/800/600",
+    "readTime": "6 min read",
+    "featured": false,
+    "views": 1814,
+    "likes": 298,
+    "comments": 11,
+    "tags": [
+      "Relaxation",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 23,
+    "slug": "relaxation-article-3",
+    "category": "Relaxation",
+    "releaseDate": "2026-06-12",
+    "title": "Relaxation: Practical Guide #3",
+    "description": "This educational article explains Relaxation in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 23",
+      "designation": "Mental Health Specialist",
+      "experience": "7 Years"
+    },
+    "image": "https://picsum.photos/seed/medical23/800/600",
+    "readTime": "7 min read",
+    "featured": false,
+    "views": 1851,
+    "likes": 307,
+    "comments": 12,
+    "tags": [
+      "Relaxation",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 24,
+    "slug": "relaxation-article-4",
+    "category": "Relaxation",
+    "releaseDate": "2026-01-13",
+    "title": "Relaxation: Practical Guide #4",
+    "description": "This educational article explains Relaxation in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 24",
+      "designation": "Mental Health Specialist",
+      "experience": "8 Years"
+    },
+    "image": "https://picsum.photos/seed/medical24/800/600",
+    "readTime": "8 min read",
+    "featured": false,
+    "views": 1888,
+    "likes": 316,
+    "comments": 13,
+    "tags": [
+      "Relaxation",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 25,
+    "slug": "relaxation-article-5",
+    "category": "Relaxation",
+    "releaseDate": "2026-02-14",
+    "title": "Relaxation: Practical Guide #5",
+    "description": "This educational article explains Relaxation in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 25",
+      "designation": "Mental Health Specialist",
+      "experience": "9 Years"
+    },
+    "image": "https://picsum.photos/seed/medical25/800/600",
+    "readTime": "9 min read",
+    "featured": false,
+    "views": 1925,
+    "likes": 325,
+    "comments": 14,
+    "tags": [
+      "Relaxation",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 26,
+    "slug": "stress-management-article-1",
+    "category": "Stress Management",
+    "releaseDate": "2026-03-10",
+    "title": "Stress Management: Practical Guide #1",
+    "description": "This educational article explains Stress Management in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 26",
+      "designation": "Mental Health Specialist",
+      "experience": "5 Years"
+    },
+    "image": "https://picsum.photos/seed/medical26/800/600",
+    "readTime": "5 min read",
+    "featured": true,
+    "views": 1962,
+    "likes": 334,
+    "comments": 10,
+    "tags": [
+      "Stress Management",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 27,
+    "slug": "stress-management-article-2",
+    "category": "Stress Management",
+    "releaseDate": "2026-04-11",
+    "title": "Stress Management: Practical Guide #2",
+    "description": "This educational article explains Stress Management in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 27",
+      "designation": "Mental Health Specialist",
+      "experience": "6 Years"
+    },
+    "image": "https://picsum.photos/seed/medical27/800/600",
+    "readTime": "6 min read",
+    "featured": false,
+    "views": 1999,
+    "likes": 343,
+    "comments": 11,
+    "tags": [
+      "Stress Management",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 28,
+    "slug": "stress-management-article-3",
+    "category": "Stress Management",
+    "releaseDate": "2026-05-12",
+    "title": "Stress Management: Practical Guide #3",
+    "description": "This educational article explains Stress Management in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 28",
+      "designation": "Mental Health Specialist",
+      "experience": "7 Years"
+    },
+    "image": "https://picsum.photos/seed/medical28/800/600",
+    "readTime": "7 min read",
+    "featured": false,
+    "views": 2036,
+    "likes": 352,
+    "comments": 12,
+    "tags": [
+      "Stress Management",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 29,
+    "slug": "stress-management-article-4",
+    "category": "Stress Management",
+    "releaseDate": "2026-06-13",
+    "title": "Stress Management: Practical Guide #4",
+    "description": "This educational article explains Stress Management in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 29",
+      "designation": "Mental Health Specialist",
+      "experience": "8 Years"
+    },
+    "image": "https://picsum.photos/seed/medical29/800/600",
+    "readTime": "8 min read",
+    "featured": false,
+    "views": 2073,
+    "likes": 361,
+    "comments": 13,
+    "tags": [
+      "Stress Management",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  },
+  {
+    "id": 30,
+    "slug": "stress-management-article-5",
+    "category": "Stress Management",
+    "releaseDate": "2026-01-14",
+    "title": "Stress Management: Practical Guide #5",
+    "description": "This educational article explains Stress Management in clear language. It discusses common symptoms, contributing factors, healthy lifestyle habits, evidence-based coping strategies, when to seek professional support, and practical daily tips. Regular sleep, balanced nutrition, exercise, social connection, and stress reduction techniques can improve overall well-being. This content is for educational purposes only and is not a substitute for medical advice. If symptoms are severe, persistent, or affect daily life, consult a qualified healthcare professional for assessment and personalized treatment.",
+    "author": {
+      "name": "Dr. Author 30",
+      "designation": "Mental Health Specialist",
+      "experience": "9 Years"
+    },
+    "image": "https://picsum.photos/seed/medical30/800/600",
+    "readTime": "9 min read",
+    "featured": false,
+    "views": 2110,
+    "likes": 370,
+    "comments": 14,
+    "tags": [
+      "Stress Management",
+      "Mental Health",
+      "Wellness"
+    ],
+    "status": "Published",
+    "language": "English"
+  }
+]

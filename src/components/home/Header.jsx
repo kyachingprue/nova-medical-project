@@ -41,14 +41,14 @@ const Header = () => {
             Caring for Your <br />{' '}
             <span className=" text-[#1747A6]">Inner</span> Peace
           </h1>
-          <div className="w-96 h-0.5 bg-blue-300 my-8"></div>
+          <div className="w-125 h-0.5 bg-white my-8"></div>
           <p className="text-black/90 text-lg leading-8 max-w-xl">
             Discover clarity, confidence, and emotional wellness through guided
             support that helps you manage stress, heal from within, and grow
             stronger every aspect of your mental health journey.
           </p>
           <div className="flex items-center gap-4 mt-8 ">
-            <button className="text-md text-white font-semibold py-2 px-4 rounded-full bg-blue-700">
+            <button className="text-lg text-white font-bold py-3 px-4 rounded-full bg-blue-700">
               Start A Checkup Now
             </button>
             <p>video Icon</p>
