@@ -1,21 +1,21 @@
 import { Link } from 'react-router'
-import banner from '../../assets/images/about-banner.jpg'
+import banner from '../../assets/images/medicine.jpg'
 
 const AboutBanner = () => {
   return (
     <section
-      className="relative mt-16 h-80 md:h-96 bg-cover bg-center overflow-hidden"
+      className="relative mt-16 h-60 md:h-80 bg-cover bg-center overflow-hidden"
       style={{
         backgroundImage: `url(${banner})`
       }}
     >
       {/* Blur + Dark Overlay */}
-      <div className="absolute inset-0 backdrop-blur-[3px] bg-black/45"></div>
+      <div className="absolute inset-0 backdrop-blur-[10px] bg-linear-to-r from-blue-700/60 to-amber-500/50"></div>
 
       {/* Content */}
       <div className="relative z-10 flex h-full items-center justify-center">
         <div className="text-center px-5">
-          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-8">
             About Us
           </h1>
 
