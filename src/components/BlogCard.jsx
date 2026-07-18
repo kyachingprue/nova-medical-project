@@ -8,7 +8,7 @@ import { Link } from "react-router";
 const BlogCard = ({ blog }) => {
   const { category, releaseDate, title, description, image, readTime, views, likes } = blog;
   return (
-    <section className="w-full md:w-96 lg:w-100 h-full mx-2 md:mx-4 bg-white rounded-md hover:shadow-2xl transition duration-300">
+    <section className="w-full md:w-96 lg:w-100 mx-auto h-full bg-white rounded-md hover:shadow-2xl transition duration-300">
       <div className="relative">
         <img
           className="relative w-full h-75 rounded-t-md object-cover"
@@ -40,12 +40,16 @@ const BlogCard = ({ blog }) => {
         <p className="pb-3">{description.slice(0, 300)}...</p>
         <div className="flex justify-between items-center pb-4">
           <div className="flex items-center gap-2">
-            <FaEye size={20} />
-            <p className="text-gray-700 text-sm md:text-base">{views}</p>
+            <FaEye size={20} className="cursor-pointer" />
+            <p className="text-gray-100 py-0.5 px-2 rounded-md text-sm bg-blue-900">
+              {views}
+            </p>
           </div>
           <div className="flex items-center gap-2">
-            <AiFillLike size={20} />
-            <p className="text-gray-700 text-sm md:text-base">{likes}</p>
+            <AiFillLike size={20} className="cursor-pointer" />
+            <p className="text-gray-100 py-0.5 px-2 rounded-md text-sm bg-cyan-900">
+              {likes}
+            </p>
           </div>
         </div>
       </div>

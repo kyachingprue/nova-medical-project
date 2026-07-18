@@ -2,6 +2,7 @@ import AboutMental from "../../components/home/AboutMental";
 import Blogs from "../../components/home/Blogs";
 import GetAQuote from "../../components/home/GetAQuote";
 import Header from "../../components/home/Header";
+import HomeServices from "../../components/home/HomeServices";
 import HowWeWork from "../../components/home/HowWeWork";
 import OurSpecialist from "../../components/home/OurSpecialist";
 import PersonalCard from "../../components/home/PersonalCard";
@@ -14,6 +15,7 @@ const Home = () => {
       <PersonalCard />
       <AboutMental />
       <HowWeWork />
+      <HomeServices/>
       <WhyChooseUs />
       <OurSpecialist />
       <GetAQuote />

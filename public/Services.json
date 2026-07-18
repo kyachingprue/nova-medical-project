@@ -1,0 +1,494 @@
+[
+  {
+    "id": 1,
+    "image": "https://picsum.photos/seed/doctor1/600/400",
+    "title": "Cardiology Specialist",
+    "shortTitle": "Heart Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Alex Morgan",
+      "category": "Cardiology",
+      "role": "Senior Cardiology Specialist",
+      "experience": "9 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc1/300/300"
+    },
+    "duration": "21 Minutes",
+    "consultationFee": 90,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.9,
+    "reviews": 291,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1001",
+    "email": "doctor1@medicare.com",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 2,
+    "image": "https://picsum.photos/seed/doctor2/600/400",
+    "title": "Neurology Specialist",
+    "shortTitle": "Brain Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Blex Morgan",
+      "category": "Neurology",
+      "role": "Senior Neurology Specialist",
+      "experience": "10 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc2/300/300"
+    },
+    "duration": "22 Minutes",
+    "consultationFee": 100,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.7,
+    "reviews": 532,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1002",
+    "email": "doctor2@medicare.com",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 3,
+    "image": "https://picsum.photos/seed/doctor3/600/400",
+    "title": "Pediatrics Specialist",
+    "shortTitle": "Child Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Clex Morgan",
+      "category": "Pediatrics",
+      "role": "Senior Pediatrics Specialist",
+      "experience": "11 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc3/300/300"
+    },
+    "duration": "23 Minutes",
+    "consultationFee": 110,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.9,
+    "reviews": 527,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1003",
+    "email": "doctor3@medicare.com",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": false,
+    "appointmentRequired": true
+  },
+  {
+    "id": 4,
+    "image": "https://picsum.photos/seed/doctor4/600/400",
+    "title": "Orthopedics Specialist",
+    "shortTitle": "Bone Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Dlex Morgan",
+      "category": "Orthopedics",
+      "role": "Senior Orthopedics Specialist",
+      "experience": "12 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc4/300/300"
+    },
+    "duration": "24 Minutes",
+    "consultationFee": 120,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.9,
+    "reviews": 125,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1004",
+    "email": "doctor4@medicare.com",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 5,
+    "image": "https://picsum.photos/seed/doctor5/600/400",
+    "title": "Dermatology Specialist",
+    "shortTitle": "Skin Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Elex Morgan",
+      "category": "Dermatology",
+      "role": "Senior Dermatology Specialist",
+      "experience": "13 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc5/300/300"
+    },
+    "duration": "25 Minutes",
+    "consultationFee": 130,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.7,
+    "reviews": 524,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1005",
+    "email": "doctor5@medicare.com",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 6,
+    "image": "https://picsum.photos/seed/doctor6/600/400",
+    "title": "Gynecology Specialist",
+    "shortTitle": "Women's Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Flex Morgan",
+      "category": "Gynecology",
+      "role": "Senior Gynecology Specialist",
+      "experience": "14 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc6/300/300"
+    },
+    "duration": "26 Minutes",
+    "consultationFee": 140,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.6,
+    "reviews": 522,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1006",
+    "email": "doctor6@medicare.com",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": false,
+    "appointmentRequired": true
+  },
+  {
+    "id": 7,
+    "image": "https://picsum.photos/seed/doctor7/600/400",
+    "title": "Dentistry Specialist",
+    "shortTitle": "Dental Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Glex Morgan",
+      "category": "Dentistry",
+      "role": "Senior Dentistry Specialist",
+      "experience": "15 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc7/300/300"
+    },
+    "duration": "27 Minutes",
+    "consultationFee": 150,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.9,
+    "reviews": 300,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1007",
+    "email": "doctor7@medicare.com",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 8,
+    "image": "https://picsum.photos/seed/doctor8/600/400",
+    "title": "Ophthalmology Specialist",
+    "shortTitle": "Eye Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Hlex Morgan",
+      "category": "Ophthalmology",
+      "role": "Senior Ophthalmology Specialist",
+      "experience": "16 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc8/300/300"
+    },
+    "duration": "28 Minutes",
+    "consultationFee": 160,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.9,
+    "reviews": 233,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1008",
+    "email": "doctor8@medicare.com",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 9,
+    "image": "https://picsum.photos/seed/doctor9/600/400",
+    "title": "Psychiatry Specialist",
+    "shortTitle": "Mental Health",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Ilex Morgan",
+      "category": "Psychiatry",
+      "role": "Senior Psychiatry Specialist",
+      "experience": "17 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc9/300/300"
+    },
+    "duration": "29 Minutes",
+    "consultationFee": 170,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.9,
+    "reviews": 408,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1009",
+    "email": "doctor9@medicare.com",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": false,
+    "appointmentRequired": true
+  },
+  {
+    "id": 10,
+    "image": "https://picsum.photos/seed/doctor10/600/400",
+    "title": "ENT Specialist",
+    "shortTitle": "ENT Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Jlex Morgan",
+      "category": "ENT",
+      "role": "Senior ENT Specialist",
+      "experience": "18 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc10/300/300"
+    },
+    "duration": "30 Minutes",
+    "consultationFee": 180,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.9,
+    "reviews": 192,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1010",
+    "email": "doctor10@medicare.com",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 11,
+    "image": "https://picsum.photos/seed/doctor11/600/400",
+    "title": "Oncology Specialist",
+    "shortTitle": "Cancer Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Klex Morgan",
+      "category": "Oncology",
+      "role": "Senior Oncology Specialist",
+      "experience": "19 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc11/300/300"
+    },
+    "duration": "31 Minutes",
+    "consultationFee": 190,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 4.6,
+    "reviews": 162,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1011",
+    "email": "doctor11@medicare.com",
+    "languages": [
+      "English",
+      "Spanish"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": true,
+    "appointmentRequired": true
+  },
+  {
+    "id": 12,
+    "image": "https://picsum.photos/seed/doctor12/600/400",
+    "title": "General Medicine Specialist",
+    "shortTitle": "Primary Care",
+    "description": "This department provides comprehensive, patient-centered healthcare with experienced specialists, modern diagnostic tools, and evidence-based treatment plans. Every consultation begins with a detailed medical assessment followed by personalized recommendations designed to improve long-term health and quality of life. Patients receive clear explanations, preventive guidance, follow-up support, and access to advanced procedures whenever required. The team focuses on early diagnosis, compassionate communication, accurate treatment, and continuous monitoring to ensure the best possible outcomes. Whether managing chronic conditions, routine checkups, or urgent concerns, the clinic emphasizes safety, comfort, and high-quality medical care for every patient.",
+    "doctor": {
+      "name": "Dr. Llex Morgan",
+      "category": "General Medicine",
+      "role": "Senior General Medicine Specialist",
+      "experience": "20 Years",
+      "qualification": "MBBS, MD",
+      "image": "https://picsum.photos/seed/doc12/300/300"
+    },
+    "duration": "32 Minutes",
+    "consultationFee": 200,
+    "availability": "Mon - Sat, 9:00 AM - 5:00 PM",
+    "rating": 5.0,
+    "reviews": 520,
+    "location": "City Medical Center",
+    "phone": "+1-202-555-1012",
+    "email": "doctor12@medicare.com",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "features": [
+      "Online Consultation",
+      "Modern Equipment",
+      "Follow-up Care",
+      "Emergency Support"
+    ],
+    "treatments": [
+      "Diagnosis",
+      "Routine Checkup",
+      "Advanced Treatment",
+      "Preventive Care"
+    ],
+    "isAvailable": false,
+    "appointmentRequired": true
+  }
+]

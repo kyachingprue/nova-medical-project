@@ -1,9 +1,12 @@
+import OurServices from "../../components/services/OurServices";
+import ServiceBanner from "../../components/services/ServiceBanner";
 
 
 const Services = () => {
   return (
     <div>
-      <h3>This is Services Page</h3>
+      <ServiceBanner/>
+      <OurServices/>
     </div>
   );
 };
