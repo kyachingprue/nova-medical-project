@@ -1,6 +1,6 @@
 import Rating from '@mui/material/Rating'
 
-const ServiceDetails = ({ service }) => {
+const ServiceCard = ({ service }) => {
   const { image, title, shortTitle, description, doctor, rating } = service
   return (
     <section className="w-96 h-full mx-auto bg-blue-200 hover:shadow-2xl transition duration-300">
@@ -42,4 +42,4 @@ const ServiceDetails = ({ service }) => {
   )
 }
 
-export default ServiceDetails
+export default ServiceCard;
