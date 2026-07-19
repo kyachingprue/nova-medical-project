@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import ServiceDetails from '../services/ServiceCard'
 import axios from 'axios'
+import { Button } from '@mui/material'
+import { FaArrowRightArrowLeft } from 'react-icons/fa6'
+import { Link } from 'react-router'
 
 const HomeServices = () => {
   const [services, setServices] = useState([])
@@ -32,6 +35,16 @@ const HomeServices = () => {
           {services.slice(0, 6).map(service => (
             <ServiceDetails key={service.id} service={service} />
           ))}
+        </div>
+        <div className="text-center">
+          <Link to="/our-services">
+            <Button
+              variant="contained"
+              className="text-base! font-bold! normal-case! flex flex-row gap-2"
+            >
+              See More <FaArrowRightArrowLeft />{' '}
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

@@ -4,6 +4,8 @@ import BlogCard from "../BlogCard";
 import { GoArrowRight } from "react-icons/go";
 import CircularProgress from '@mui/material/CircularProgress'
 import Box from '@mui/material/Box'
+import { Link } from "react-router";
+import Button from '@mui/material/Button'
 
 
 const Blogs = () => {
@@ -46,13 +48,19 @@ const Blogs = () => {
               </h3>
             </div>
             <div>
-              <button className="text-white flex items-center gap-2 text-lg font-bold bg-blue-700 py-3 px-5 rounded-full">
-                All Blog & Article <GoArrowRight size={29}/>
-              </button>
+              <Link to="/all-blogs">
+                <Button
+                  variant="contained"
+                  className="bg-blue-600! hover:bg-blue-700! rounded-full! px-5! py-3! normal-case! font-bold! text-base! flex items-center gap-2"
+                >
+                  All Blog & Article
+                  <GoArrowRight size={22} />
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-4">
-            {blogs.slice(0, 9).map(blog => (
+            {blogs.slice(0, 6).map(blog => (
               <BlogCard key={blog.id} blog={blog} />
             ))}
           </div>
