@@ -1,9 +1,10 @@
+import OurSpecialist from "../../components/home/OurSpecialist";
 
 
 const OurTeam = () => {
   return (
-    <div>
-      <h3>this is our team pages</h3>
+    <div className="bg-white py-20">
+      <OurSpecialist/>
     </div>
   );
 };

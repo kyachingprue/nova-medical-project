@@ -33,7 +33,7 @@ const OurServices = () => {
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-gray-100">
       <div className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-9 py-10">
           {services.map(service => (

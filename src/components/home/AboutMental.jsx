@@ -2,6 +2,7 @@ import image1 from "../../assets/images/top-image.jpg";
 import image2 from "../../assets/images/center-image.jpg";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import signature from "../../assets/images/signature.png";
+import { Button } from "@mui/material";
 
 const AboutMental = () => {
   return (
@@ -23,7 +24,7 @@ const AboutMental = () => {
       </div>
       <div className="flex-1/2">
         <p className="text-lg text-blue-700 uppercase py-3">About Us</p>
-        <h3 className="text-4xl font-extrabold text-black pb-4">
+        <h3 className="text-4xl font-bold text-black pb-4">
           Your Journey To Mental Wellness Starts Here
         </h3>
         <p className="text-sm text-gray-600 pb-4">
@@ -59,9 +60,9 @@ const AboutMental = () => {
         </p>
         <div className="flex gap-20 items-center ">
           <img src={signature} className="w-40" alt="Signature" />
-          <button className="py-2.5 px-4 rounded-md bg-blue-800 text-white text-lg font-bold">
+          <Button variant="contained">
             Read more
-          </button>
+          </Button>
         </div>
       </div>
     </section>

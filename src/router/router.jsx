@@ -11,10 +11,10 @@ import OurTeam from '../pages/about/OurTeam'
 import FAQ from '../pages/about/FAQ'
 import AllBlogs from '../pages/blog/AllBlogs'
 import BlogCategory from '../pages/blog/BlogCategory'
-import Pricing from '../pages/page/Pricing'
-import Testimonials from '../pages/page/Testimonials'
 import Gallery from '../pages/page/Gallery'
 import NotFound from '../pages/page/NotFound'
+import PricingPage from '../pages/page/PricingPage'
+import TestimonialPage from '../pages/page/TestimonialPage'
 
 const router = createBrowserRouter([
   {
@@ -71,11 +71,11 @@ const router = createBrowserRouter([
       // Pages
       {
         path: "/pricing",
-        element:<Pricing/>
+        element:<PricingPage/>
       },
       {
         path: "/testimonials",
-        element: <Testimonials/>
+        element: <TestimonialPage/>
       },
       {
         path: "/gallery",

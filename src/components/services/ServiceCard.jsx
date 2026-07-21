@@ -3,7 +3,7 @@ import Rating from '@mui/material/Rating'
 const ServiceCard = ({ service }) => {
   const { image, title, shortTitle, description, doctor, rating } = service
   return (
-    <section className="w-96 h-full mx-auto bg-blue-200 hover:shadow-2xl transition duration-300">
+    <section className="w-96 h-full mx-auto bg-white shadow-md hover:shadow-2xl transition duration-300">
       <div className="relative ">
         <img
           src={image}
@@ -11,7 +11,7 @@ const ServiceCard = ({ service }) => {
           alt="Doctor Image"
         />
         <div className="absolute top-2 left-2">
-          <p className="text-white cursor-progress bg-cyan-900 py-3 px-4 shadow-lg rounded-md">
+          <p className="text-white cursor-pointer bg-cyan-900 py-3 px-4 shadow-lg rounded-md">
             {shortTitle}
           </p>
         </div>

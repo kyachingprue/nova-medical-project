@@ -1,9 +1,10 @@
+import FAQPage from "../../components/aboutUs/FAQPage";
 
 
 const FAQ = () => {
   return (
     <div>
-      <h2>This is FAQ pages</h2>
+      <FAQPage/>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const HomeServices = () => {
   }, [])
 
   return (
-    <div className="bg-white">
+    <div className="bg-gray-100">
       <div className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-20">
         <div className="py-10 w-full mx-auto">
           <p className="text-xl uppercase font-bold text-blue-700 text-center py-3">

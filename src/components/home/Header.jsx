@@ -1,3 +1,4 @@
+import { FaPlay } from "react-icons/fa6";
 import banner from "../../assets/images/banner-gradient.jpg";
 import girlImage from "../../assets/images/doctor-image.png"
 import { FaPhone } from "react-icons/fa";
@@ -30,7 +31,9 @@ const Header = () => {
             <h3 className="text-3xl font-bold text-white text-center pb-1">
               4.9 /5
             </h3>
-            <p className="text-white text-sm md:text-base text-center">Review on Google</p>
+            <p className="text-white text-sm md:text-base text-center">
+              Review on Google
+            </p>
           </div>
         </div>
         <div>
@@ -48,10 +51,10 @@ const Header = () => {
             stronger every aspect of your mental health journey.
           </p>
           <div className="flex items-center gap-4 mt-8 ">
-            <button className="text-lg text-white font-bold py-3 px-4 rounded-full bg-blue-700">
+            <button className="border-2 border-blue-950 hover:border-cyan-600 text-cyan-900 hover:bg-cyan-600 hover:text-white px-6 py-3 rounded-full font-semibold active:scale-95 transition-all duration-300 ">
               Start A Checkup Now
             </button>
-            <p>video Icon</p>
+            <FaPlay size={40} color="red" className="cursor-pointer"/>
           </div>
         </div>
       </section>
