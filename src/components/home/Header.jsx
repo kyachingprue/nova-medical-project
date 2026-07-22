@@ -1,12 +1,29 @@
-import { FaPlay } from "react-icons/fa6";
-import banner from "../../assets/images/banner-gradient.jpg";
-import girlImage from "../../assets/images/doctor-image.png"
-import { FaPhone } from "react-icons/fa";
+import { FaPlay } from 'react-icons/fa6'
+import banner from '../../assets/images/banner-gradient.jpg'
+import girlImage from '../../assets/images/doctor-image.png'
+import { FaPhone } from 'react-icons/fa'
+import { useEffect, useState } from 'react'
+import { motion, AnimatePresence } from 'motion/react'
+import { FaXmark } from 'react-icons/fa6'
 
 const Header = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
+  useEffect(() => {
+    const handleEscape = e => {
+      if (e.key === 'Escape') {
+        setIsVideoOpen(false)
+      }
+    }
+
+    window.addEventListener('keydown', handleEscape)
+
+    return () => {
+      window.removeEventListener('keydown', handleEscape)
+    }
+  }, [])
   return (
     <header
-      className="pt-16 mt-16 bg-cover bg-center"
+      className="pt-10 bg-cover bg-center"
       style={{ backgroundImage: `url(${banner})` }}
     >
       <section className="flex flex-col items-center justify-center h-full md:flex-row md:justify-between max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto">
@@ -54,12 +71,81 @@ const Header = () => {
             <button className="border-2 border-blue-950 hover:border-cyan-600 text-cyan-900 hover:bg-cyan-600 hover:text-white px-6 py-3 rounded-full font-semibold active:scale-95 transition-all duration-300 ">
               Start A Checkup Now
             </button>
-            <FaPlay size={40} color="red" className="cursor-pointer"/>
+            <motion.div
+              onClick={() => setIsVideoOpen(true)}
+              animate={{
+                scale: [1, 1.15, 1]
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity
+              }}
+              className=" cursor-pointer bg-red-500 rounded-full p-5 text-white shadow-xl"
+            >
+              <FaPlay size={20} />
+            </motion.div>
           </div>
         </div>
       </section>
+      <AnimatePresence>
+        {isVideoOpen && (
+          <motion.div
+            initial={{
+              opacity: 0
+            }}
+            animate={{
+              opacity: 1
+            }}
+            exit={{
+              opacity: 0
+            }}
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center px-4"
+          >
+            {/* Close Button */}
+
+            <motion.button
+              whileHover={{
+                scale: 1.1
+              }}
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute top-5 right-5 bg-white text-black rounded-full p-3"
+            >
+              <FaXmark size={25} />
+            </motion.button>
+
+            {/* Video Container */}
+
+            <motion.div
+              initial={{
+                scale: 0.7,
+                opacity: 0
+              }}
+              animate={{
+                scale: 1,
+                opacity: 1
+              }}
+              exit={{
+                scale: 0.7,
+                opacity: 0
+              }}
+              transition={{
+                duration: 0.4
+              }}
+              className="w-full max-w-5xl aspect-video bg-black rounded-xl overflow-hidden shadow-2xl"
+            >
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/74DWwSxsVSs?autoplay=1"
+                title="Medical Video"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              ></iframe>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
-};
+}
 
-export default Header;
+export default Header

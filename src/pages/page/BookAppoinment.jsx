@@ -15,7 +15,7 @@ import {
 
 const BookAppointment = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-cyan-50/40 to-white py-20">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-cyan-50/40 to-white py-20">
 
       {/* Background Blur */}
       <div className="absolute -left-24 top-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-[120px]" />
@@ -103,7 +103,7 @@ const BookAppointment = () => {
             transition={{
               duration: 0.7,
             }}
-            className="rounded-[32px] border border-cyan-100 bg-white p-8 shadow-xl"
+            className="rounded-4xl border border-cyan-100 bg-white p-8 shadow-xl"
           >
 
             <div className="mb-8 flex items-center gap-4">
@@ -294,7 +294,7 @@ const BookAppointment = () => {
               transition={{
                 duration: 0.2,
               }}
-              className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-cyan-500 to-sky-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-cyan-300"
+              className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-linear-to-r from-cyan-500 to-sky-600 px-8 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-cyan-300"
             >
               Book Appointment
 
@@ -343,10 +343,10 @@ const BookAppointment = () => {
             transition={{
               duration: 0.25,
             }}
-            className="overflow-hidden rounded-[32px] border border-cyan-100 bg-white shadow-2xl"
+            className="overflow-hidden rounded-4xl border border-cyan-100 bg-white shadow-2xl"
           >
             {/* Header */}
-            <div className="bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 p-8 text-white">
+            <div className="bg-linear-to-r from-cyan-500 via-sky-500 to-blue-600 p-8 text-white">
 
               <div className="flex items-center justify-between">
 
@@ -591,7 +591,7 @@ const BookAppointment = () => {
 
               <span className="h-3 w-3 rounded-full bg-cyan-500"></span>
 
-              <span className="h-1 w-32 rounded-full bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500"></span>
+              <span className="h-1 w-32 rounded-full bg-linear-to-r from-cyan-500 via-sky-500 to-blue-500"></span>
 
               <span className="h-3 w-3 rounded-full bg-sky-500"></span>
 

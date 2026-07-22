@@ -110,7 +110,7 @@ const Navbar = () => {
       }}
       className="sticky top-0 z-50 border-b border-cyan-100 bg-white/90 backdrop-blur-xl"
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-2">
         {/* Logo */}
         <Link to="/">
           <motion.div
@@ -122,7 +122,7 @@ const Navbar = () => {
             }}
             className="flex items-center gap-3"
           >
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 to-sky-600 text-white shadow-lg">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-500 to-sky-600 text-white shadow-lg">
               <FaHeartbeat size={28} />
             </div>
 
@@ -293,19 +293,21 @@ const Navbar = () => {
           </motion.a>
 
           {/* Appointment Button */}
-          <motion.button
-            whileHover={{
-              scale: 1.05,
-              y: -2
-            }}
-            whileTap={{
-              scale: 0.95
-            }}
-            className="flex items-center gap-3 rounded-full bg-gradient-to-r from-cyan-500 to-sky-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700 hover:shadow-cyan-300"
-          >
-            <FiCalendar size={18} />
-            Book Appointment
-          </motion.button>
+          <Link to="/book-appoinment">
+            <motion.button
+              whileHover={{
+                scale: 1.05,
+                y: -2
+              }}
+              whileTap={{
+                scale: 0.95
+              }}
+              className="flex items-center gap-3 rounded-full bg-linear-to-r from-cyan-500 to-sky-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700 hover:shadow-cyan-300"
+            >
+              <FiCalendar size={18} />
+              Book Appointment
+            </motion.button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -514,15 +516,17 @@ const Navbar = () => {
               </motion.a>
 
               {/* Appointment Button */}
-              <motion.button
-                whileTap={{
-                  scale: 0.96
-                }}
-                className="mt-3 flex w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-cyan-500 to-sky-600 px-5 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700"
-              >
-                <FiCalendar size={20} />
-                Book Appointment
-              </motion.button>
+              <Link to="/book-appointment">
+                <motion.button
+                  whileTap={{
+                    scale: 0.96
+                  }}
+                  className="mt-3 flex w-full items-center justify-center gap-3 rounded-xl bg-linear-to-r from-cyan-500 to-sky-600 px-5 py-4 font-semibold active:scale-95 text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700"
+                >
+                  <FiCalendar size={20} />
+                  Book Appointment
+                </motion.button>
+              </Link>
             </div>
           </motion.div>
         )}

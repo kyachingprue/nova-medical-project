@@ -89,7 +89,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/book-appoinment',
-        element:<BookAppointment/>
+        element: <BookAppointment />
       },
       {
         path: '/contact-us',

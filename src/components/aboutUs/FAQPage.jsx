@@ -216,12 +216,12 @@ function Accordion({ items }) {
 
 export default function FAQPage() {
   return (
-    <div className="overflow-hidden bg-white pt-16">
+    <div className="overflow-hidden bg-white">
       {/* =======================================================
           HERO SECTION
       ======================================================== */}
 
-      <section className="relative h-105 overflow-hidden md:h-130 lg:h-166">
+      <section className="relative h-full pb-20 pt-10 overflow-hidden md:h-130 lg:h-166">
         {/* Background Image */}
         <motion.img
           initial={{ scale: 1.2 }}
@@ -346,7 +346,10 @@ export default function FAQPage() {
               }}
               className="mt-10 flex flex-wrap gap-4"
             >
-              <Button variant="contained" className="rounded-full! bg-blue-600! px-8! py-4! font-semibold! text-white! transition! hover:bg-blue-700! active:scale-95">
+              <Button
+                variant="contained"
+                className="rounded-full! bg-blue-600! px-8! py-4! font-semibold! text-white! transition! hover:bg-blue-700! active:scale-95"
+              >
                 Book Appointment
               </Button>
 

@@ -4,7 +4,7 @@ import banner from '../../assets/images/medicine.jpg'
 const AboutBanner = () => {
   return (
     <section
-      className="relative mt-16 h-60 md:h-80 bg-cover bg-center overflow-hidden"
+      className="relative h-60 md:h-80 bg-cover bg-center overflow-hidden"
       style={{
         backgroundImage: `url(${banner})`
       }}

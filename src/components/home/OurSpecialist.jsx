@@ -11,7 +11,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 
 const OurSpecialist = () => {
   return (
-    <section className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto bg-white py-20">
+    <section className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto bg-white pb-20">
       <div className="w-6/12 mx-auto py-8">
         <p className="text-xl text-center font-bold uppercase text-blue-800">
           Our Specialist
