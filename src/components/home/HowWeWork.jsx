@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import backgroundGradient from "../../assets/images/gradient.jpg"
+import backgroundGradient from "../../assets/images/background1.jpg"
 import { motion  } from "motion/react";
 
 const HowWeWork = () => {
@@ -75,13 +75,13 @@ const HowWeWork = () => {
            variants={item}
            className="lg:w-1/2"
 >
-        <p className="mb-4 inline-block rounded-full bg-blue-100 px-5 py-2 text-sm font-bold uppercase tracking-widest text-blue-700">
+        <p className="mb-4 inline-block rounded-full bg-blue-100 px-5 py-3 text-sm font-bold uppercase tracking-widest text-blue-700">
           How We Work
          </p>
 
-        <h2 className="text-4xl font-black leading-tight text-slate-900 md:text-5xl lg:text-6xl">
+        <h2 className="text-4xl font-black leading-tight text-slate-100 md:text-5xl lg:text-6xl">
            Here For Your
-        <span className="text-blue-600">
+        <span className="text-blue-900">
            {" "}Health,
         </span>
            <br />
@@ -91,7 +91,7 @@ const HowWeWork = () => {
           <motion.div
          variants={item}
          className="flex flex-col gap-6 lg:w-1/2 lg:pl-24">
-       <p className="text-lg leading-8 text-slate-600">
+       <p className="text-lg leading-8 text-slate-200">
         We offer compassionate healthcare, combining physical,
         emotional, and preventive care to help you live your
         healthiest and happiest life.

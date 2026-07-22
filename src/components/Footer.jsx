@@ -1,4 +1,6 @@
-import { FaFacebookF, FaLinkedinIn, FaTimes } from 'react-icons/fa'
+import { FaFacebookF, FaHeartbeat, FaLinkedinIn, FaTimes } from 'react-icons/fa'
+import { Link } from 'react-router';
+import {motion} from "motion/react"
 
 const Footer = () => {
   return (
@@ -16,16 +18,35 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo */}
           <div>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-10 h-10 rounded-full border-4 border-white border-r-transparent rotate-45"></div>
+            <div>
+              <Link to="/">
+                <motion.div
+                  whileHover={{
+                    scale: 1.05
+                  }}
+                  whileTap={{
+                    scale: 0.96
+                  }}
+                  className="flex items-center gap-3 cursor-pointer"
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 to-sky-600 text-white shadow-lg">
+                    <FaHeartbeat className="text-3xl" />
+                  </div>
 
-              <div>
-                <h2 className="font-bold leading-none text-lg">NURO</h2>
-                <p className="font-bold text-lg leading-none">PSYCHOLOG</p>
-              </div>
+                  <div>
+                    <h2 className="text-2xl font-extrabold text-slate-100">
+                      Nova
+                    </h2>
+
+                    <p className="text-sm font-semibold uppercase tracking-[4px] text-cyan-300">
+                      Medicare
+                    </p>
+                  </div>
+                </motion.div>
+              </Link>
             </div>
 
-            <p className="text-[17px] leading-9 text-gray-100">
+            <p className="text-[17px] leading-9 pt-5 text-gray-100">
               Professional, responsive, and soothing design for therapists,
               counselors, and life coaches.
             </p>

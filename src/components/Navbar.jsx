@@ -1,315 +1,534 @@
-import { NavLink, Link, useLocation } from "react-router";
-import Button from '@mui/material/Button'
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+import { Link, NavLink } from "react-router";
+import { motion, AnimatePresence } from "motion/react";
 
+import {
+  FiMenu,
+  FiX,
+  FiChevronDown,
+  FiPhoneCall,
+  FiCalendar,
+} from "react-icons/fi";
+
+import { FaHeartbeat } from "react-icons/fa";
+
+const navLinks = [
+  {
+    title: 'Home',
+    path: '/'
+  },
+  {
+    title: 'About',
+    children: [
+      {
+        name: 'About Us',
+        path: '/about-us'
+      },
+      {
+        name: 'Our Team',
+        path: '/our-team'
+      },
+      {
+        name: 'FAQ',
+        path: '/faq'
+      }
+    ]
+  },
+  {
+    title: 'Services',
+    children: [
+      {
+        name: 'Our Services',
+        path: '/services/our-services'
+      },
+      {
+        name: 'Appointments',
+        path: '/services/appointments'
+      },
+      {
+        name: 'Emergency Care',
+        path: '/services/emergency-care'
+      },
+      {
+        name: 'Testimonials',
+        path: '/services/testimonials'
+      },
+      {
+        name: 'Pricing',
+        path: '/services/pricing'
+      },
+      {
+        name: 'Gallery',
+        path: '/services/gallery'
+      },
+      {
+        name: '404',
+        path: '/services/not-found'
+      }
+    ]
+  },
+  {
+    title: 'Doctors',
+    children: [
+      {
+        name: 'All Doctors',
+        path: '/doctors'
+      },
+      {
+        name: 'Departments',
+        path: '/departments'
+      },
+      {
+        name: 'Book Appointment',
+        path: '/book-appoinment'
+      }
+    ]
+  },
+  {
+    title: 'Contact',
+    path: '/contact-us'
+  }
+]
 
 const Navbar = () => {
- const [openDropdown, setOpenDropdown] = useState(null)
+  const [open, setOpen] = useState(false)
 
-const aboutRef = useRef(null)
-const serviceRef = useRef(null)
-const blogRef = useRef(null)
-const pageRef = useRef(null)
-
- const location = useLocation()
-
- const serviceRoutes = ['/our-services', '/appointment', '/doctors', '/departments', '/emergency-care']
- const blogRoutes = ['/all-blogs', '/blog-category', '/blog-details']
- const aboutRoutes = ['/about-us', '/our-team', '/faq']
- const pageRoutes = ['/pricing', '/testimonials', '/gallery', '/404']
-
- const pageActive = pageRoutes.includes(location.pathname)
- const aboutActive = aboutRoutes.includes(location.pathname)
- const serviceActive = serviceRoutes.includes(location.pathname)
- const blogActive = blogRoutes.includes(location.pathname)
-
- // Close when clicking outside
-useEffect(() => {
-  const handleClickOutside = e => {
-    if (
-      !aboutRef.current?.contains(e.target) &&
-      !serviceRef.current?.contains(e.target) &&
-      !blogRef.current?.contains(e.target) &&
-      !pageRef.current?.contains(e.target)
-    ) {
-      setOpenDropdown(null)
-    }
-  }
-
-  document.addEventListener('mousedown', handleClickOutside)
-
-  return () => document.removeEventListener('mousedown', handleClickOutside)
-}, [])
+  const [activeDropdown, setActiveDropdown] = useState(null)
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 shadow-lg bg-gray-50">
-      <section className="flex justify-between items-center max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-4 text-black">
-        <div>
-          <Link to="/">
-            <button className="active:scale-95 cursor-pointer text-3xl font-medium ">
-              NovaDev
-            </button>
-          </Link>
+    <motion.header
+      initial={{
+        y: -80,
+        opacity: 0
+      }}
+      animate={{
+        y: 0,
+        opacity: 1
+      }}
+      transition={{
+        duration: 0.5
+      }}
+      className="sticky top-0 z-50 border-b border-cyan-100 bg-white/90 backdrop-blur-xl"
+    >
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Logo */}
+        <Link to="/">
+          <motion.div
+            whileHover={{
+              scale: 1.03
+            }}
+            whileTap={{
+              scale: 0.97
+            }}
+            className="flex items-center gap-3"
+          >
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 to-sky-600 text-white shadow-lg">
+              <FaHeartbeat size={28} />
+            </div>
+
+            <div>
+              <h2 className="text-2xl font-extrabold leading-none text-slate-900">
+                Nova
+              </h2>
+
+              <p className="text-xs font-semibold uppercase tracking-[4px] text-cyan-600">
+                Medicare
+              </p>
+            </div>
+          </motion.div>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden items-center gap-2 lg:flex">
+          {navLinks.map(item => {
+            const hasDropdown = item.children
+
+            return (
+              <div
+                key={item.title}
+                className="relative"
+                onMouseEnter={() =>
+                  hasDropdown && setActiveDropdown(item.title)
+                }
+                onMouseLeave={() => hasDropdown && setActiveDropdown(null)}
+              >
+                {/* Normal Link */}
+                {!hasDropdown ? (
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `rounded-xl px-5 py-3 font-semibold transition-all duration-300 ${
+                        isActive
+                          ? 'bg-cyan-600 text-white shadow-lg'
+                          : 'text-slate-700 hover:bg-cyan-50 hover:text-cyan-600'
+                      }`
+                    }
+                  >
+                    {item.title}
+                  </NavLink>
+                ) : (
+                  <>
+                    {/* Dropdown Button */}
+                    <motion.button
+                      whileHover={{
+                        y: -2
+                      }}
+                      className="flex items-center gap-2 rounded-xl px-5 py-3 font-semibold text-slate-700 transition-all duration-300 hover:bg-cyan-50 hover:text-cyan-600"
+                    >
+                      {item.title}
+
+                      <motion.div
+                        animate={{
+                          rotate: activeDropdown === item.title ? 180 : 0
+                        }}
+                        transition={{
+                          duration: 0.25
+                        }}
+                      >
+                        <FiChevronDown size={18} />
+                      </motion.div>
+                    </motion.button>
+
+                    {/* Dropdown */}
+                    <AnimatePresence>
+                      {activeDropdown === item.title && (
+                        <motion.div
+                          initial={{
+                            opacity: 0,
+                            y: 15
+                          }}
+                          animate={{
+                            opacity: 1,
+                            y: 0
+                          }}
+                          exit={{
+                            opacity: 0,
+                            y: 15
+                          }}
+                          transition={{
+                            duration: 0.2
+                          }}
+                          className="absolute left-0 top-full mt-3 w-72 overflow-hidden rounded-2xl border border-cyan-100 bg-white shadow-2xl"
+                        >
+                          <div className="py-3">
+                            {item.children.map((child, index) => (
+                              <motion.div
+                                key={child.path}
+                                initial={{
+                                  opacity: 0,
+                                  x: -15
+                                }}
+                                animate={{
+                                  opacity: 1,
+                                  x: 0
+                                }}
+                                transition={{
+                                  delay: index * 0.05,
+                                  duration: 0.25
+                                }}
+                              >
+                                <NavLink
+                                  to={child.path}
+                                  className={({ isActive }) =>
+                                    `group mx-3 flex items-center justify-between rounded-xl px-5 py-3 transition-all duration-300 ${
+                                      isActive
+                                        ? 'bg-cyan-600 text-white shadow-md'
+                                        : 'text-slate-700 hover:bg-cyan-50 hover:text-cyan-600'
+                                    }`
+                                  }
+                                >
+                                  <span className="font-medium">
+                                    {child.name}
+                                  </span>
+
+                                  <motion.span
+                                    initial={{
+                                      x: -5,
+                                      opacity: 0
+                                    }}
+                                    whileHover={{
+                                      x: 0,
+                                      opacity: 1
+                                    }}
+                                    transition={{
+                                      duration: 0.2
+                                    }}
+                                    className="opacity-0 group-hover:opacity-100"
+                                  >
+                                    →
+                                  </motion.span>
+                                </NavLink>
+                              </motion.div>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </>
+                )}
+              </div>
+            )
+          })}
+        </nav>
+
+        {/* Desktop Right Side */}
+        <div className="hidden items-center gap-4 lg:flex">
+          {/* Emergency Button */}
+          <motion.a
+            href="tel:+880123456789"
+            whileHover={{
+              scale: 1.05,
+              y: -2
+            }}
+            whileTap={{
+              scale: 0.95
+            }}
+            className="flex items-center gap-3 rounded-full border border-cyan-200 bg-cyan-50 px-5 py-3 font-medium text-cyan-700 transition-all duration-300 hover:border-cyan-400 hover:bg-cyan-100"
+          >
+            <FiPhoneCall size={18} />
+            <div className="flex flex-col leading-none">
+              <span className="text-xs text-slate-500">Emergency</span>
+              <span className="font-semibold">+880 1234 567890</span>
+            </div>
+          </motion.a>
+
+          {/* Appointment Button */}
+          <motion.button
+            whileHover={{
+              scale: 1.05,
+              y: -2
+            }}
+            whileTap={{
+              scale: 0.95
+            }}
+            className="flex items-center gap-3 rounded-full bg-gradient-to-r from-cyan-500 to-sky-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700 hover:shadow-cyan-300"
+          >
+            <FiCalendar size={18} />
+            Book Appointment
+          </motion.button>
         </div>
-        <ul className="flex gap-10 items-center">
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? 'text-blue-600 font-bold' : 'text-gray-600'
-              }
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className="relative" ref={aboutRef}>
-            <button
-              onClick={() =>
-                setOpenDropdown(openDropdown === 'about' ? null : 'about')
-              }
-              className={`flex items-center gap-2 transition-colors ${
-                aboutActive
-                  ? 'text-blue-600 font-bold'
-                  : 'text-gray-600 hover:text-blue-600'
-              }`}
-            >
-              About
-              <span>{openDropdown === 'about' ? '▲' : '▼'}</span>
-            </button>
 
-            {openDropdown === 'about' && (
-              <div className="absolute top-10 left-0 w-56 rounded-lg border border-blue-300 bg-white shadow-lg overflow-hidden">
-                <NavLink
-                  to="/about-us"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  About Us
-                </NavLink>
-
-                <NavLink
-                  to="/our-team"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Our Team
-                </NavLink>
-
-                <NavLink
-                  to="/faq"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  FAQ
-                </NavLink>
-              </div>
+        {/* Mobile Menu Button */}
+        <motion.button
+          whileTap={{
+            scale: 0.9
+          }}
+          whileHover={{
+            rotate: 5
+          }}
+          onClick={() => setOpen(!open)}
+          className="flex h-12 w-12 items-center justify-center rounded-xl border border-cyan-200 bg-white text-cyan-700 shadow-sm transition-all duration-300 hover:bg-cyan-50 lg:hidden"
+        >
+          <AnimatePresence mode="wait">
+            {open ? (
+              <motion.div
+                key="close"
+                initial={{
+                  rotate: -90,
+                  opacity: 0
+                }}
+                animate={{
+                  rotate: 0,
+                  opacity: 1
+                }}
+                exit={{
+                  rotate: 90,
+                  opacity: 0
+                }}
+                transition={{
+                  duration: 0.2
+                }}
+              >
+                <FiX size={26} />
+              </motion.div>
+            ) : (
+              <motion.div
+                key="menu"
+                initial={{
+                  rotate: 90,
+                  opacity: 0
+                }}
+                animate={{
+                  rotate: 0,
+                  opacity: 1
+                }}
+                exit={{
+                  rotate: -90,
+                  opacity: 0
+                }}
+                transition={{
+                  duration: 0.2
+                }}
+              >
+                <FiMenu size={26} />
+              </motion.div>
             )}
-          </li>
-          <li className="relative" ref={serviceRef}>
-            <button
-              onClick={() =>
-                setOpenDropdown(openDropdown === 'service' ? null : 'service')
-              }
-              className={`flex items-center gap-2 transition-colors ${
-                serviceActive
-                  ? 'text-blue-600 font-bold'
-                  : 'text-gray-600 hover:text-blue-600'
-              }`}
-            >
-              Services
-              <span>{openDropdown === 'service' ? '▲' : '▼'}</span>
-            </button>
+          </AnimatePresence>
+        </motion.button>
+      </div>
+      {/* ================= Mobile Menu ================= */}
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{
+              opacity: 0,
+              height: 0
+            }}
+            animate={{
+              opacity: 1,
+              height: 'auto'
+            }}
+            exit={{
+              opacity: 0,
+              height: 0
+            }}
+            transition={{
+              duration: 0.35
+            }}
+            className="border-t border-cyan-100 bg-white lg:hidden"
+          >
+            <div className="space-y-2 px-5 py-6">
+              {navLinks.map(item => {
+                const hasDropdown = item.children
 
-            {openDropdown === 'service' && (
-              <div className="absolute top-10 left-0 w-56 rounded-lg border border-blue-300 bg-white shadow-lg overflow-hidden">
-                <NavLink
-                  to="/our-services"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-bold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Our Services
-                </NavLink>
+                return (
+                  <div
+                    key={item.title}
+                    className="overflow-hidden rounded-2xl border border-slate-100"
+                  >
+                    {/* Normal Link */}
+                    {!hasDropdown ? (
+                      <NavLink
+                        to={item.path}
+                        onClick={() => setOpen(false)}
+                        className={({ isActive }) =>
+                          `block px-5 py-4 font-semibold transition-all duration-300 ${
+                            isActive
+                              ? 'bg-cyan-600 text-white'
+                              : 'text-slate-700 hover:bg-cyan-50'
+                          }`
+                        }
+                      >
+                        {item.title}
+                      </NavLink>
+                    ) : (
+                      <>
+                        {/* Accordion Header */}
+                        <button
+                          onClick={() =>
+                            setActiveDropdown(
+                              activeDropdown === item.title ? null : item.title
+                            )
+                          }
+                          className="flex w-full items-center justify-between bg-white px-5 py-4 font-semibold text-slate-800 transition-all hover:bg-cyan-50"
+                        >
+                          <span>{item.title}</span>
 
-                <NavLink
-                  to="/appointment"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-bold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Appointment
-                </NavLink>
+                          <motion.div
+                            animate={{
+                              rotate: activeDropdown === item.title ? 180 : 0
+                            }}
+                            transition={{
+                              duration: 0.25
+                            }}
+                          >
+                            <FiChevronDown size={20} />
+                          </motion.div>
+                        </button>
 
-                <NavLink
-                  to="/doctors"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-bold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Doctors
-                </NavLink>
+                        {/* Accordion Content */}
+                        <AnimatePresence>
+                          {activeDropdown === item.title && (
+                            <motion.div
+                              initial={{
+                                height: 0,
+                                opacity: 0
+                              }}
+                              animate={{
+                                height: 'auto',
+                                opacity: 1
+                              }}
+                              exit={{
+                                height: 0,
+                                opacity: 0
+                              }}
+                              transition={{
+                                duration: 0.3
+                              }}
+                              className="overflow-hidden bg-slate-50"
+                            >
+                              <div className="space-y-1 p-3">
+                                {item.children.map(child => (
+                                  <NavLink
+                                    key={child.path}
+                                    to={child.path}
+                                    onClick={() => {
+                                      setOpen(false)
+                                      setActiveDropdown(null)
+                                    }}
+                                    className={({ isActive }) =>
+                                      `flex items-center justify-between rounded-xl px-4 py-3 transition-all duration-300 ${
+                                        isActive
+                                          ? 'bg-cyan-600 text-white'
+                                          : 'text-slate-600 hover:bg-white hover:text-cyan-600'
+                                      }`
+                                    }
+                                  >
+                                    <span>{child.name}</span>
 
-                <NavLink
-                  to="/departments"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-bold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Departments
-                </NavLink>
-                <NavLink
-                  to="/emergency-care"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-bold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Emergency Care
-                </NavLink>
-              </div>
-            )}
-          </li>
-          <li className="relative" ref={blogRef}>
-            <button
-              onClick={() =>
-                setOpenDropdown(openDropdown === 'blog' ? null : 'blog')
-              }
-              className={`flex items-center gap-2 transition-colors ${
-                blogActive
-                  ? 'text-blue-600 font-bold'
-                  : 'text-gray-600 hover:text-blue-600'
-              }`}
-            >
-              Blogs
-              <span>{openDropdown === 'blog' ? '▲' : '▼'}</span>
-            </button>
+                                    <motion.span
+                                      whileHover={{
+                                        x: 4
+                                      }}
+                                      transition={{
+                                        duration: 0.2
+                                      }}
+                                    >
+                                      →
+                                    </motion.span>
+                                  </NavLink>
+                                ))}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </>
+                    )}
+                  </div>
+                )
+              })}
 
-            {openDropdown === 'blog' && (
-              <div className="absolute top-10 left-0 w-56 rounded-lg border border-blue-300 bg-white shadow-lg overflow-hidden">
-                <NavLink
-                  to="/all-blogs"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  All Blogs
-                </NavLink>
+              {/* Divider */}
+              <div className="my-5 h-px bg-slate-200" />
 
-                <NavLink
-                  to="/blog-category"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Blog Category
-                </NavLink>
+              {/* Emergency Button */}
+              <motion.a
+                href="tel:+880123456789"
+                whileTap={{
+                  scale: 0.96
+                }}
+                className="flex w-full items-center justify-center gap-3 rounded-xl border border-cyan-200 bg-cyan-50 px-5 py-4 font-semibold text-cyan-700 transition-colors duration-300 hover:bg-cyan-100"
+              >
+                <FiPhoneCall size={20} />
+                Emergency Call
+              </motion.a>
 
-                <NavLink
-                  to="/blog-details"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Blog Details
-                </NavLink>
-              </div>
-            )}
-          </li>
-          <li className="relative" ref={pageRef}>
-            <button
-              onClick={() =>
-                setOpenDropdown(openDropdown === 'page' ? null : 'page')
-              }
-              className={`flex items-center gap-2 transition-colors ${
-                pageActive
-                  ? 'text-blue-600 font-bold'
-                  : 'text-gray-600 hover:text-blue-600'
-              }`}
-            >
-              Pages
-              <span>{openDropdown === 'page' ? '▲' : '▼'}</span>
-            </button>
-
-            {openDropdown === 'page' && (
-              <div className="absolute top-10 left-0 w-56 rounded-lg border bg-white shadow-lg overflow-hidden">
-                <NavLink
-                  to="/pricing"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Pricing
-                </NavLink>
-
-                <NavLink
-                  to="/testimonials"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Testimonials
-                </NavLink>
-
-                <NavLink
-                  to="/gallery"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  Gallery
-                </NavLink>
-
-                <NavLink
-                  to="/404"
-                  className={({ isActive }) =>
-                    `block px-4 py-3 hover:bg-gray-100 ${
-                      isActive ? 'text-blue-600 font-semibold' : 'text-gray-600'
-                    }`
-                  }
-                >
-                  404
-                </NavLink>
-              </div>
-            )}
-          </li>
-        </ul>
-
-        <div>
-          <Button variant="contained">Contact Us</Button>
-        </div>
-      </section>
-    </nav>
+              {/* Appointment Button */}
+              <motion.button
+                whileTap={{
+                  scale: 0.96
+                }}
+                className="mt-3 flex w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-cyan-500 to-sky-600 px-5 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700"
+              >
+                <FiCalendar size={20} />
+                Book Appointment
+              </motion.button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.header>
   )
-};
+}
 
-export default Navbar;
+export default Navbar

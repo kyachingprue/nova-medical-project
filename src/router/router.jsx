@@ -15,6 +15,8 @@ import Gallery from '../pages/page/Gallery'
 import NotFound from '../pages/page/NotFound'
 import PricingPage from '../pages/page/PricingPage'
 import TestimonialPage from '../pages/page/TestimonialPage'
+import ContactUs from '../pages/contact/ContactUs'
+import BookAppointment from '../pages/page/BookAppoinment'
 
 const router = createBrowserRouter([
   {
@@ -40,11 +42,11 @@ const router = createBrowserRouter([
       },
       // Services
       {
-        path: '/our-services',
+        path: '/services/our-services',
         element: <OurServices />
       },
       {
-        path: '/appointment',
+        path: '/services/appointments',
         element: <Appointment />
       },
       {
@@ -56,34 +58,42 @@ const router = createBrowserRouter([
         element: <Departments />
       },
       {
-        path: '/emergency-care',
+        path: '/services/emergency-care',
         element: <EmergencyCare />
       },
       // Blogs
       {
-        path: "/all-blogs",
-        element:<AllBlogs/>
+        path: '/all-blogs',
+        element: <AllBlogs />
       },
       {
-        path: "/blog-category",
-        element:<BlogCategory/>
+        path: '/blog-category',
+        element: <BlogCategory />
       },
       // Pages
       {
-        path: "/pricing",
-        element:<PricingPage/>
+        path: '/services/pricing',
+        element: <PricingPage />
       },
       {
-        path: "/testimonials",
-        element: <TestimonialPage/>
+        path: '/services/testimonials',
+        element: <TestimonialPage />
       },
       {
-        path: "/gallery",
-        element:<Gallery/>
+        path: '/services/gallery',
+        element: <Gallery />
       },
       {
-        path: "/404",
-        element:<NotFound/>
+        path: '/services/not-found',
+        element: <NotFound />
+      },
+      {
+        path: '/book-appoinment',
+        element:<BookAppointment/>
+      },
+      {
+        path: '/contact-us',
+        element: <ContactUs />
       }
     ]
   }
