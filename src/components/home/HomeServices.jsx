@@ -4,6 +4,7 @@ import axios from 'axios'
 import { Button } from '@mui/material'
 import { FaArrowRightArrowLeft } from 'react-icons/fa6'
 import { Link } from 'react-router'
+import {motion} from 'motion/react'
 
 const HomeServices = () => {
   const [services, setServices] = useState([])
@@ -36,14 +37,46 @@ const HomeServices = () => {
             <ServiceDetails key={service.id} service={service} />
           ))}
         </div>
-        <div className="text-center">
-          <Link to="/our-services">
-            <Button
-              variant="contained"
-              className="text-base! font-bold! normal-case! flex flex-row gap-2"
+        <div className="flex justify-center mt-10">
+          <Link to="/services/our-services">
+            <motion.div
+              whileHover={{ y: -4, scale: 1.04 }}
+              whileTap={{ scale: 0.96 }}
+              transition={{ duration: 0.25 }}
             >
-              See More <FaArrowRightArrowLeft />{' '}
-            </Button>
+              <Button
+                variant="contained"
+                endIcon={
+                  <motion.span
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{
+                      duration: 1.2,
+                      repeat: Infinity,
+                      ease: 'easeInOut'
+                    }}
+                  >
+                    <FaArrowRightArrowLeft />
+                  </motion.span>
+                }
+                sx={{
+                  px: 5,
+                  py: 1.8,
+                  fontSize: '1rem',
+                  fontWeight: 700,
+                  textTransform: 'none',
+                  borderRadius: '999px',
+                  background: '#0891b2',
+                  boxShadow: '0 10px 25px rgba(8,145,178,0.25)',
+                  transition: 'all .3s ease',
+                  '&:hover': {
+                    background: 'linear-gradient(90deg, #0891b2, #06b6d4)',
+                    boxShadow: '0 15px 35px rgba(8,145,178,0.35)'
+                  }
+                }}
+              >
+                See More
+              </Button>
+            </motion.div>
           </Link>
         </div>
       </div>

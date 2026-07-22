@@ -10,13 +10,14 @@ import EmergencyCare from '../pages/service/EmergencyCare'
 import OurTeam from '../pages/about/OurTeam'
 import FAQ from '../pages/about/FAQ'
 import AllBlogs from '../pages/blog/AllBlogs'
-import BlogCategory from '../pages/blog/BlogCategory'
 import Gallery from '../pages/page/Gallery'
 import NotFound from '../pages/page/NotFound'
 import PricingPage from '../pages/page/PricingPage'
 import TestimonialPage from '../pages/page/TestimonialPage'
 import ContactUs from '../pages/contact/ContactUs'
 import BookAppointment from '../pages/page/BookAppoinment'
+import BlogDetails from '../pages/blog/BlogDetails'
+import ServiceDetails from '../components/services/ServiceDetails'
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
         element: <OurServices />
       },
       {
+        path: "/service-card-details/:id",
+        element: <ServiceDetails />,
+      },
+      {
         path: '/services/appointments',
         element: <Appointment />
       },
@@ -67,8 +72,16 @@ const router = createBrowserRouter([
         element: <AllBlogs />
       },
       {
-        path: '/blog-category',
-        element: <BlogCategory />
+        path: "/blog-details/:id",
+        element: <BlogDetails />,
+        loader: async ({ params }) => {
+        const res = await fetch("/medical-blogs-30.json");
+        const blogs = await res.json();
+
+        return blogs.find(
+         (blog) => blog.id === Number(params.id)
+         );
+        },
       },
       // Pages
       {

@@ -29,6 +29,10 @@ const navLinks = [
         path: '/our-team'
       },
       {
+        name: 'Our Blogs',
+        path: '/all-blogs'
+      },
+      {
         name: 'FAQ',
         path: '/faq'
       }
