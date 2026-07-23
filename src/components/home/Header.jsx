@@ -1,5 +1,5 @@
 import { FaPlay } from 'react-icons/fa6'
-import banner from '../../assets/images/banner-gradient.jpg'
+import banner from '../../assets/images/background-linear.jpg'
 import girlImage from '../../assets/images/doctor-image.png'
 import { FaPhone } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
@@ -54,21 +54,21 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <p className="text-blue-600 text-xl font-bold py-3">
+          <p className="text-gray-100 text-xl font-bold py-3">
             FIND BALANCE, EMBRACE LIFE
           </p>
           <h1 className="hero-title text-4xl md:text-6xl font-black leading-tight tracking-tight text-pink-400">
             Caring for Your <br />{' '}
-            <span className=" text-[#1747A6]">Inner</span> Peace
+            <span className=" text-blue-200">Inner</span> Peace
           </h1>
           <div className="w-125 h-0.5 bg-white my-8"></div>
-          <p className="text-black/90 text-lg leading-8 max-w-xl">
+          <p className="text-blue-200 text-lg leading-8 max-w-xl">
             Discover clarity, confidence, and emotional wellness through guided
             support that helps you manage stress, heal from within, and grow
             stronger every aspect of your mental health journey.
           </p>
           <div className="flex items-center gap-4 mt-8 ">
-            <button className="border-2 border-blue-950 hover:border-cyan-600 text-cyan-900 hover:bg-cyan-600 hover:text-white px-6 py-3 rounded-full font-semibold active:scale-95 transition-all duration-300 ">
+            <button className="border-2 border-blue-100 hover:border-cyan-600 text-cyan-100 hover:bg-cyan-200 hover:text-black px-6 py-3 rounded-full font-semibold active:scale-95 transition-all duration-300 ">
               Start A Checkup Now
             </button>
             <motion.div

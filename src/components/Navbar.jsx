@@ -306,7 +306,7 @@ const Navbar = () => {
               whileTap={{
                 scale: 0.95
               }}
-              className="flex items-center gap-3 rounded-full bg-linear-to-r from-cyan-500 to-sky-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700 hover:shadow-cyan-300"
+              className="flex items-center gap-3 rounded-full bg-linear-to-r from-cyan-500 to-sky-600 px-6 py-3 font-semibold text-white shadow-lg transition-all active:scale-95 duration-300 hover:from-cyan-600 hover:to-sky-700 hover:shadow-cyan-300"
             >
               <FiCalendar size={18} />
               Book Appointment
