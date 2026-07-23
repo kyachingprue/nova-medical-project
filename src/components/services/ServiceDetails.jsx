@@ -17,6 +17,7 @@ import {
   MdVerified,
   MdCalendarMonth,
 } from "react-icons/md";
+import { Helmet } from "react-helmet-async";
 
 const ServiceDetails = () => {
   const { id } = useParams()
@@ -67,8 +68,13 @@ const ServiceDetails = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.45 }}
-      className="max-w-7xl mx-auto px-4 md:px-8 py-12"
+      className="max-w-7xl mx-auto px-4 md:px-32 py-12"
     >
+      <Helmet>
+        <title>{title} | MediCare Service</title>
+
+        <meta name="description" content={description} />
+      </Helmet>
       {/* Hero Image */}
 
       <motion.div

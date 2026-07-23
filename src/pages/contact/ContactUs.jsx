@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Helmet } from "react-helmet-async";
 
 import {
   FiPhoneCall,
@@ -41,7 +42,15 @@ const contactInfo = [
 
 const ContactUs = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-cyan-50 via-white to-white py-28">
+    <section className="relative overflow-hidden bg-linear-to-b from-cyan-50 via-white to-white py-28">
+      <Helmet>
+        <title>Contact | MediCare</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
+        />
+      </Helmet>
       {/* Decorative Background */}
       <div className="absolute -top-28 -left-24 h-72 w-72 rounded-full bg-cyan-200/30 blur-[120px]" />
 
@@ -121,7 +130,7 @@ const ContactUs = () => {
                   className="group rounded-3xl border border-cyan-100 bg-white p-6 shadow-lg transition-all duration-500 hover:border-cyan-300 hover:shadow-cyan-100"
                 >
                   {/* Icon */}
-                  <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 to-sky-600 text-white shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
+                  <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-500 to-sky-600 text-white shadow-lg transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6">
                     {item.icon}
                   </div>
 
@@ -159,7 +168,7 @@ const ContactUs = () => {
               whileHover={{
                 scale: 1.02
               }}
-              className="relative overflow-hidden rounded-[30px] bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 text-white shadow-2xl"
+              className="relative overflow-hidden rounded-[30px] bg-linear-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 text-white shadow-2xl"
             >
               {/* Decorative Circle */}
               <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full bg-white/10" />
@@ -210,7 +219,7 @@ const ContactUs = () => {
               duration: 0.7
             }}
           >
-            <div className="rounded-[32px] border border-cyan-100 bg-white p-6 shadow-2xl md:p-8">
+            <div className="rounded-4xl border border-cyan-100 bg-white p-6 shadow-2xl md:p-8">
               <div className="mb-8">
                 <span className="inline-block rounded-full bg-cyan-100 px-4 py-2 text-sm font-semibold text-cyan-700">
                   Send Us a Message
@@ -291,7 +300,7 @@ const ContactUs = () => {
                   whileTap={{
                     scale: 0.96
                   }}
-                  className="flex h-14 w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-cyan-500 to-sky-600 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700"
+                  className="flex h-14 w-full items-center justify-center gap-3 rounded-xl bg-linear-to-r from-cyan-500 to-sky-600 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700"
                 >
                   <FiSend size={20} />
                   Send Message
@@ -316,7 +325,7 @@ const ContactUs = () => {
             duration: 0.8,
             delay: 0.2
           }}
-          className="mt-20 rounded-[32px] bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 md:p-12 shadow-2xl"
+          className="mt-20 rounded-4xl bg-linear-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 md:p-12 shadow-2xl"
         >
           <div className="grid grid-cols-2 gap-8 text-center lg:grid-cols-4">
             <div>

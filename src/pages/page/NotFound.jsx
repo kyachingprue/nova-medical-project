@@ -1,16 +1,22 @@
 import { HeartPulse, Home, ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const NotFound = () => {
   return (
     <section className="min-h-screen py-24 flex items-center justify-center bg-linear-to-br from-sky-50 via-white to-cyan-100 px-6">
+      <Helmet>
+        <title>404 | MediCare</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
+        />
+      </Helmet>
       <div className="max-w-2xl text-center">
         {/* Medical Icon */}
         <div className="flex justify-center mb-8">
           <div className="w-28 h-28 rounded-full bg-cyan-100 flex items-center justify-center animate-pulse shadow-xl">
-            <HeartPulse
-              size={58}
-              className="text-cyan-600 animate-bounce"
-            />
+            <HeartPulse size={58} className="text-cyan-600 animate-bounce" />
           </div>
         </div>
 
@@ -76,7 +82,7 @@ const NotFound = () => {
         </div>
       </div>
     </section>
-  );
+  )
 };
 
 export default NotFound;

@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { AiFillLike, AiOutlineArrowLeft } from 'react-icons/ai'
 import { BsCalendarDate } from 'react-icons/bs'
 import { FaEye, FaUserMd } from 'react-icons/fa'
@@ -50,14 +51,19 @@ const [blog, setBlog] = useState(null)
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="max-w-5xl mx-auto px-5 py-12"
+      className="max-w-5xl mx-auto px-5 pt-7 pb-20"
     >
+      <Helmet>
+        <title>{blog.title} | MediCare Blog</title>
+
+        <meta name="description" content={blog.description} />
+      </Helmet>
       {/* Image */}
 
       <img
         src={image}
         alt={title}
-        className="w-full h-70 md:h-112.5 rounded-2xl object-cover"
+        className="w-full h-64 md:h-128 rounded-2xl object-cover"
       />
 
       {/* Category */}

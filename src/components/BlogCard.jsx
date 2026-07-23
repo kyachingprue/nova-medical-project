@@ -68,7 +68,7 @@ const BlogCard = ({ blog }) => {
 
         {/* Title */}
 
-        <Link to="/">
+        <Link to={`/blog-details/${id}`}>
           <motion.h3
             whileHover={{ x: 5 }}
             className="mt-5 text-2xl font-bold leading-snug text-slate-800 transition-colors duration-300 group-hover:text-blue-600 group-hover:underline"

@@ -16,6 +16,7 @@ import doctor3 from "../../assets/images/doctor3.jpg";
 import doctor4 from "../../assets/images/doctor4.jpg";
 import doctor5 from "../../assets/images/doctor5.jpg";
 import doctor6 from "../../assets/images/doctor6.avif";
+import { Helmet } from "react-helmet-async";
 
 const doctors = [
   {
@@ -78,7 +79,15 @@ const Doctors = () => {
   const [search, setSearch] = useState('')
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-cyan-50 via-white to-white py-28">
+    <section className="relative overflow-hidden bg-linear-to-b from-cyan-50 via-white to-white py-28">
+      <Helmet>
+        <title>All Doctors | MediCare</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
+        />
+      </Helmet>
       {/* Background Blur */}
       <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-cyan-300/20 blur-[120px]" />
 
@@ -202,7 +211,7 @@ const Doctors = () => {
                     }}
                     src={doctor.image}
                     alt={doctor.name}
-                    className="h-[340px] w-full object-cover"
+                    className="h-85 w-full object-cover"
                   />
 
                   {/* Rating Badge */}
@@ -255,7 +264,7 @@ const Doctors = () => {
                       whileTap={{
                         scale: 0.96
                       }}
-                      className="flex-1 rounded-xl bg-gradient-to-r from-cyan-500 to-sky-600 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700"
+                      className="flex-1 rounded-xl bg-linear-to-r from-cyan-500 to-sky-600 px-5 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:from-cyan-600 hover:to-sky-700"
                     >
                       Book Appointment
                     </motion.button>
@@ -333,7 +342,7 @@ const Doctors = () => {
           transition={{
             duration: 0.8
           }}
-          className="mt-20 rounded-[32px] overflow-hidden bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 md:p-12 shadow-2xl"
+          className="mt-20 rounded-4xl overflow-hidden bg-linear-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 md:p-12 shadow-2xl"
         >
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
             {/* Left */}

@@ -13,6 +13,7 @@ import {
   FaLungs,
   FaNotesMedical,
 } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const departments = [
   {
@@ -85,7 +86,15 @@ const departments = [
 
 const Departments = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-cyan-50/40 to-white py-20">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-cyan-50/40 to-white py-20">
+      <Helmet>
+        <title>Departments | MediCare</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
+        />
+      </Helmet>
       {/* Background Blur */}
       <div className="absolute -left-24 top-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-[120px]" />
 
@@ -182,7 +191,7 @@ const Departments = () => {
             >
               {/* Top Gradient */}
               <div
-                className={`absolute left-0 top-0 h-1.5 w-full bg-gradient-to-r ${department.color}`}
+                className={`absolute left-0 top-0 h-1.5 w-full bg-linear-to-r ${department.color}`}
               />
 
               {/* Background Glow */}
@@ -276,7 +285,7 @@ const Departments = () => {
                         duration: 1,
                         delay: index * 0.1
                       }}
-                      className={`h-full rounded-full bg-gradient-to-r ${department.color}`}
+                      className={`h-full rounded-full bg-linear-to-r ${department.color}`}
                     />
                   </div>
                 </div>
@@ -324,7 +333,7 @@ const Departments = () => {
           transition={{
             duration: 0.8
           }}
-          className="mt-20 rounded-[32px] overflow-hidden bg-gradient-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 md:p-12 shadow-2xl"
+          className="mt-20 rounded-4xl overflow-hidden bg-linear-to-r from-cyan-600 via-sky-600 to-blue-700 p-8 md:p-12 shadow-2xl"
         >
           <div className="flex flex-col items-center justify-between gap-8 lg:flex-row">
             {/* Left */}
@@ -386,7 +395,7 @@ const Departments = () => {
 
             <div className="h-3 w-3 rounded-full bg-cyan-500"></div>
 
-            <div className="h-1 w-32 rounded-full bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-500"></div>
+            <div className="h-1 w-32 rounded-full bg-linear-to-r from-cyan-500 via-sky-500 to-blue-500"></div>
 
             <div className="h-3 w-3 rounded-full bg-sky-500"></div>
 

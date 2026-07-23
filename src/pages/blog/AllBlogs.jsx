@@ -4,6 +4,7 @@ import { GoArrowRight } from 'react-icons/go'
 import CircularProgress from '@mui/material/CircularProgress'
 import Box from '@mui/material/Box'
 import BlogCard from '../../components/BlogCard'
+import { Helmet } from 'react-helmet-async'
 
 const AllBlogs = () => {
   const [blogs, setBlogs] = useState([])
@@ -35,6 +36,14 @@ const AllBlogs = () => {
   }
   return (
     <main className="bg-gray-200">
+      <Helmet>
+        <title>Our Blogs | MediCare</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
+        />
+      </Helmet>
       <section className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-24">
         <section>
           <div className="flex flex-col md:flex-row justify-between items-center py-4">

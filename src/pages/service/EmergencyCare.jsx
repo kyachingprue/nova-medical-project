@@ -12,10 +12,19 @@ import {
   FaUserMd,
   FaHeartbeat,
 } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const EmergencyCare = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-cyan-50 to-white py-20">
+    <section className="relative overflow-hidden bg-linear-to-b from-white via-cyan-50 to-white py-20">
+      <Helmet>
+        <title>Emergency Care | MediCare</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
+        />
+      </Helmet>
       {/* Background Blur */}
       <div className="absolute -top-28 -left-28 h-80 w-80 rounded-full bg-cyan-300/20 blur-[120px]" />
 
@@ -161,10 +170,10 @@ const EmergencyCare = () => {
                   duration: 0.2
                 }
               }}
-              className="overflow-hidden rounded-[32px] border border-cyan-100 bg-white shadow-2xl"
+              className="overflow-hidden rounded-4xl border border-cyan-100 bg-white shadow-2xl"
             >
               {/* Top Header */}
-              <div className="bg-gradient-to-r from-red-500 via-red-600 to-rose-600 p-8 text-white">
+              <div className="bg-linear-to-r from-red-500 via-red-600 to-rose-600 p-8 text-white">
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="rounded-full bg-white/20 px-4 py-2 text-sm font-semibold backdrop-blur">
@@ -265,7 +274,7 @@ const EmergencyCare = () => {
                     whileTap={{
                       scale: 0.96
                     }}
-                    className="flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-red-500 to-rose-600 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-red-300"
+                    className="flex items-center justify-center gap-3 rounded-2xl bg-linear-to-r from-red-500 to-rose-600 px-6 py-4 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-red-300"
                   >
                     <FiPhoneCall size={20} />
                     Call Now
@@ -395,7 +404,7 @@ const EmergencyCare = () => {
           }}
           className="mt-20"
         >
-          <div className="mx-auto h-1 w-32 rounded-full bg-gradient-to-r from-red-500 via-cyan-500 to-sky-500"></div>
+          <div className="mx-auto h-1 w-32 rounded-full bg-linear-to-r from-red-500 via-cyan-500 to-sky-500"></div>
 
           <p className="mt-6 text-center text-slate-500">
             Fast response, compassionate care, and experienced emergency

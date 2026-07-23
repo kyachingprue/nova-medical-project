@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import CircularProgress from '@mui/material/CircularProgress'
 import Box from '@mui/material/Box'
 import ServiceCard from '../../components/services/ServiceCard'
+import { Helmet } from 'react-helmet-async'
 
 const OurServices = () => {
   const [services, setServices] = useState([])
@@ -34,6 +35,14 @@ const OurServices = () => {
 
   return (
     <div className="bg-gray-100">
+      <Helmet>
+        <title>Our Services | MediCare</title>
+
+        <meta
+          name="description"
+          content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
+        />
+      </Helmet>
       <div className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-9 py-10">
           {services.map(service => (
