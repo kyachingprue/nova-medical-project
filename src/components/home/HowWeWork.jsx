@@ -70,7 +70,7 @@ const HowWeWork = () => {
       viewport={{ once: true }}
       className="flex flex-col gap-10 border-b border-blue-200 pb-14 pt-12 lg:items-center lg:justify-between"
 >
-        <section className="flex border-b border-blue-400 justify-between items-center gap-4 flex-col lg:flex-row pb-14 pt-12">
+        <section className="flex border-b border-blue-100 justify-between items-center gap-4 flex-col lg:flex-row pb-14 pt-12">
           <motion.div
            variants={item}
            className="lg:w-1/2"

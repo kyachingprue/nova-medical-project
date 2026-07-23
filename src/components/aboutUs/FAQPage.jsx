@@ -7,10 +7,6 @@ import {
 } from "react-icons/fi";
 import { Button } from "@mui/material";
 
-// ----------------------------
-// Images
-// Replace with your own images
-// ----------------------------
 
 const heroImage =
   "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600";
@@ -21,9 +17,6 @@ const doctorImage =
 const stethoscopeImage =
   "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=1200";
 
-// ----------------------------
-// FAQ DATA
-// ----------------------------
 
 const generalQuestions = [
   {
@@ -91,9 +84,6 @@ const appointmentQuestions = [
   },
 ];
 
-// ----------------------------
-// Animation Variants
-// ----------------------------
 
 const fadeUp = {
   hidden: {
@@ -137,9 +127,6 @@ const fadeRight = {
   },
 };
 
-// ----------------------------
-// Accordion Component
-// ----------------------------
 
 function Accordion({ items }) {
   const [open, setOpen] = useState(0);
@@ -215,11 +202,9 @@ function Accordion({ items }) {
 // ----------------------------
 
 export default function FAQPage() {
+
   return (
     <div className="overflow-hidden bg-white">
-      {/* =======================================================
-          HERO SECTION
-      ======================================================== */}
 
       <section className="relative h-full pb-20 pt-10 overflow-hidden md:h-130 lg:h-166">
         {/* Background Image */}

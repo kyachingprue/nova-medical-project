@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { GoArrowRight } from 'react-icons/go'
 import CircularProgress from '@mui/material/CircularProgress'
 import Box from '@mui/material/Box'
 import BlogCard from '../../components/BlogCard'
@@ -44,19 +43,42 @@ const AllBlogs = () => {
           content="Learn about our experienced doctors, healthcare services, and our commitment to patient care."
         />
       </Helmet>
-      <section className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-24">
+      <section className="max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-10">
         <section>
-          <div className="flex flex-col md:flex-row justify-between items-center py-4">
-            <div>
-              <p className="text-xl font-bold text-blue-700">NEWS LETTER</p>
-              <h3 className="text-5xl font-bold text-black pt-4 pb-8">
-                Read Our Latest Blog & <br /> Article
-              </h3>
-            </div>
-            <div>
-              <button className="text-white flex items-center gap-2 text-lg font-bold bg-blue-700 py-3 px-5 rounded-full">
-                All Blog & Article <GoArrowRight size={29} />
-              </button>
+          <div className="w-full px-5 md:px-0 md:max-w-6xl mx-auto text-center mb-14">
+            <span className="inline-block px-5 py-2 rounded-full bg-cyan-100 text-cyan-700 font-semibold text-sm">
+              Medical Insights & Blogs
+            </span>
+
+            <h2 className="mt-5 text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+              Expert Health Tips &
+              <span className="text-cyan-600"> Medical Articles</span>
+            </h2>
+
+            <p className="mt-6 text-slate-600 leading-8 text-base md:text-lg">
+              Stay informed with expert-written medical articles, wellness
+              guides, preventive healthcare tips, and the latest health news.
+              Our blog helps patients make informed decisions by providing
+              reliable, easy-to-understand, and evidence-based medical
+              information for a healthier lifestyle.
+            </p>
+
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <div className="px-5 py-3 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+                📚 Expert Medical Articles
+              </div>
+
+              <div className="px-5 py-3 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+                💙 Wellness & Lifestyle Tips
+              </div>
+
+              <div className="px-5 py-3 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+                🩺 Disease Prevention Guides
+              </div>
+
+              <div className="px-5 py-3 rounded-full bg-cyan-50 text-cyan-700 font-medium">
+                🌿 Healthy Living Advice
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-4">
