@@ -112,7 +112,7 @@ const Navbar = () => {
       transition={{
         duration: 0.5
       }}
-      className="sticky top-0 z-50 border-b border-cyan-100 bg-white/90 backdrop-blur-xl"
+      className="sticky top-0 z-50 border-b border-cyan-100 bg-white/50 backdrop-blur-xl"
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-2">
         {/* Logo */}
@@ -520,7 +520,7 @@ const Navbar = () => {
               </motion.a>
 
               {/* Appointment Button */}
-              <Link to="/book-appointment">
+              <Link to="/book-appoinment">
                 <motion.button
                   whileTap={{
                     scale: 0.96

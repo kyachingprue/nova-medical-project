@@ -2,9 +2,37 @@ import { FaPlay } from 'react-icons/fa6'
 import banner from '../../assets/images/background-linear.jpg'
 import girlImage from '../../assets/images/doctor-image.png'
 import { FaPhone } from 'react-icons/fa'
-import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'motion/react'
+import { useEffect, useState, useRef } from 'react'
+import { motion, AnimatePresence, useInView, animate } from 'motion/react'
 import { FaXmark } from 'react-icons/fa6'
+
+
+const CountUp = ({ from = 0, to, duration = 2, suffix = '', decimals = 0 }) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+
+  const [count, setCount] = useState(from)
+
+  useEffect(() => {
+    if (!isInView) return
+
+    const controls = animate(from, to, {
+      duration,
+      onUpdate(value) {
+        setCount(value)
+      }
+    })
+
+    return () => controls.stop()
+  }, [isInView, from, to, duration])
+
+  return (
+    <span ref={ref}>
+      {count.toFixed(decimals)}
+      {suffix}
+    </span>
+  )
+}
 
 const Header = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
@@ -28,63 +56,140 @@ const Header = () => {
     >
       <section className="flex flex-col items-center justify-center h-full md:flex-row md:justify-between max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto">
         <div className="relative">
-          <div className="absolute flex gap-5 rounded-2xl top-2 left-0 bg-blue-800 p-4">
-            <div className="bg-white rounded-full p-2">
-              <FaPhone size={42} />
+          {/* Phone Card */}
+
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="absolute top-3 left-2 sm:left-4 lg:left-0 z-20 flex items-center gap-3 rounded-2xl bg-blue-800 px-3 py-3 md:px-5 md:py-4 shadow-xl"
+          >
+            <div className="bg-white rounded-full p-2 md:p-3">
+              <FaPhone className="text-xl md:text-3xl" />
             </div>
-            <div className="flex-row gap-1">
-              <p className="text-white text-center">Call us anytime</p>
-              <h2 className="text-2xl font-medium text-white">
+
+            <div>
+              <p className="text-white text-xs md:text-sm">Call us anytime</p>
+
+              <h2 className="text-sm md:text-xl font-semibold text-white">
                 (4544)74747474
               </h2>
             </div>
-          </div>
-          <img
+          </motion.div>
+
+          {/* Doctor Image */}
+
+          <motion.img
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
             src={girlImage}
             alt="Girl"
-            className="w-full h-full pt-14 relative object-cover"
+            className="w-full h-auto pt-16 object-cover"
           />
-          <div className="absolute flex flex-col top-88 -right-16 rounded-3xl bg-pink-400 py-3 px-5">
-            <h3 className="text-3xl font-bold text-white text-center pb-1">
-              4.9 /5
+
+          {/* Review Card */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="absolute bottom-50 right-2 md:right-4 lg:-right-12 bg-pink-500 rounded-3xl px-4 py-3 shadow-xl"
+          >
+            <h3 className="text-white text-xl md:text-3xl font-bold text-center">
+              <CountUp from={0} to={4.9} decimals={1} />
+              /5
             </h3>
-            <p className="text-white text-sm md:text-base text-center">
+
+            <p className="text-white text-xs md:text-base text-center">
               Review on Google
             </p>
-          </div>
+          </motion.div>
         </div>
-        <div>
-          <p className="text-gray-100 text-xl font-bold py-3">
+        <div className="w-full max-w-xl lg:max-w-2xl mt-10 md:mt-0 text-center md:text-left px-4">
+          {/* Small Heading */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-blue-100 text-sm sm:text-base md:text-lg lg:text-xl font-bold tracking-widest uppercase"
+          >
             FIND BALANCE, EMBRACE LIFE
-          </p>
-          <h1 className="hero-title text-4xl md:text-6xl font-black leading-tight tracking-tight text-pink-400">
-            Caring for Your <br />{' '}
-            <span className=" text-blue-200">Inner</span> Peace
-          </h1>
-          <div className="w-125 h-0.5 bg-white my-8"></div>
-          <p className="text-blue-200 text-lg leading-8 max-w-xl">
+          </motion.p>
+
+          {/* Main Title */}
+          <motion.h1
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="hero-title mt-3 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight"
+          >
+            <span className="text-pink-400">Caring for Your</span>
+            <br />
+            <span className="text-blue-200">Inner</span>{' '}
+            <span className="text-pink-400">Peace</span>
+          </motion.h1>
+
+          {/* Divider */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: '100%' }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="h-0.5 bg-white my-6 md:my-8 w-40 sm:w-56 md:w-72 lg:w-96 mx-auto md:mx-0"
+          />
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-blue-100 text-base sm:text-lg leading-7 md:leading-8 max-w-xl mx-auto md:mx-0"
+          >
             Discover clarity, confidence, and emotional wellness through guided
             support that helps you manage stress, heal from within, and grow
-            stronger every aspect of your mental health journey.
-          </p>
-          <div className="flex items-center gap-4 mt-8 ">
-            <button className="border-2 border-blue-100 hover:border-cyan-600 text-cyan-100 hover:bg-cyan-200 hover:text-black px-6 py-3 rounded-full font-semibold active:scale-95 transition-all duration-300 ">
+            stronger in every aspect of your mental health journey.
+          </motion.p>
+
+          {/* Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="flex flex-col sm:flex-row items-center md:items-start gap-5 mt-8"
+          >
+            <button className="w-full sm:w-auto border-2 border-blue-100 hover:border-cyan-500 hover:bg-cyan-200 hover:text-black text-cyan-100 px-8 py-3 rounded-full font-semibold transition-all duration-300 active:scale-95">
               Start A Checkup Now
             </button>
-            <motion.div
+
+            <motion.button
+              type="button"
               onClick={() => setIsVideoOpen(true)}
               animate={{
-                scale: [1, 1.15, 1]
+                scale: [1, 1.12, 1]
               }}
               transition={{
-                duration: 1.5,
+                duration: 1.6,
                 repeat: Infinity
               }}
-              className=" cursor-pointer bg-red-500 rounded-full p-5 text-white shadow-xl"
+              whileHover={{
+                scale: 1.15
+              }}
+              whileTap={{
+                scale: 0.9
+              }}
+              className="cursor-pointer bg-red-500 hover:bg-red-600 rounded-full p-4 sm:p-5 mb-9 md:mb-0 text-white shadow-xl"
             >
-              <FaPlay size={20} />
-            </motion.div>
-          </div>
+              <FaPlay className="text-lg sm:text-xl" />
+            </motion.button>
+          </motion.div>
         </div>
       </section>
       <AnimatePresence>

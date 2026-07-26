@@ -28,7 +28,7 @@ const HomeServices = () => {
           <p className="text-xl uppercase font-bold text-blue-700 text-center py-3">
             Our Services
           </p>
-          <h2 className="text-5xl text-center font-extrabold text-black">
+          <h2 className="text-3xl md:text-5xl text-center font-extrabold text-black">
             Breaking Stigmas, Building Strength
           </h2>
         </div>

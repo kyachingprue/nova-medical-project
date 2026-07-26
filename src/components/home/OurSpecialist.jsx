@@ -16,13 +16,13 @@ const OurSpecialist = () => {
         <p className="text-xl text-center font-bold uppercase text-blue-800">
           Our Specialist
         </p>
-        <h3 className="text-5xl font-extrabold text-black py-4 text-center">
+        <h3 className="text-3xl md:text-5xl font-extrabold text-black py-4 text-center">
           Meet Our Senior <br /> Therapist
         </h3>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:grid-cols-4 py-12 mx-auto">
         {/* image 1 */}
-        <div className="w-68 h-80 rounded-3xl relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto rounded-3xl relative">
           <img
             src={doctor1}
             alt="Doctor image"
@@ -52,7 +52,7 @@ const OurSpecialist = () => {
           </div>
         </div>
         {/* image 2 */}
-        <div className="w-68 h-80 rounded-3xl relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto rounded-3xl relative">
           <img
             src={doctor2}
             alt="Doctor image"
@@ -82,7 +82,7 @@ const OurSpecialist = () => {
           </div>
         </div>
         {/* image 3 */}
-        <div className="w-68 h-80 rounded-3xl relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto rounded-3xl relative">
           <img
             src={doctor3}
             alt="Doctor image"
@@ -112,7 +112,7 @@ const OurSpecialist = () => {
           </div>
         </div>
         {/* image 4 */}
-        <div className="w-68 h-80 rounded-3xl relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto rounded-3xl relative">
           <img
             src={doctor4}
             alt="Doctor image"
@@ -142,7 +142,7 @@ const OurSpecialist = () => {
           </div>
         </div>
         {/* image 5 */}
-        <div className="w-68 h-80 rounded-3xl relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto rounded-3xl relative">
           <img
             src={doctor5}
             alt="Doctor image"
@@ -172,7 +172,7 @@ const OurSpecialist = () => {
           </div>
         </div>
         {/* image 6 */}
-        <div className="w-68 h-80 rounded-3xl relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto rounded-3xl relative">
           <img
             src={doctor6}
             alt="Doctor image"
@@ -200,7 +200,7 @@ const OurSpecialist = () => {
           </div>
         </div>
         {/* image 7 */}
-        <div className="w-68 h-80 rounded-3xl relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto rounded-3xl relative">
           <img
             src={doctor7}
             alt="Doctor image"
@@ -228,7 +228,7 @@ const OurSpecialist = () => {
           </div>
         </div>
         {/* image 8 */}
-        <div className="w-68 h-80 relative">
+        <div className="w-full px-2 md:w-68 h-80 mx-auto relative">
           <img
             src={doctor8}
             alt="Doctor image"

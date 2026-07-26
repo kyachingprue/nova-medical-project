@@ -14,7 +14,7 @@ const Footer = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#214ea9]/85"></div>
 
-      <div className="relative max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-20 text-white">
+      <div className="relative max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto py-20 text-white px-5 md:px-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo */}
           <div>
@@ -29,7 +29,7 @@ const Footer = () => {
                   }}
                   className="flex items-center gap-3 cursor-pointer"
                 >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-500 to-sky-600 text-white shadow-lg">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-500 to-sky-600 text-white shadow-lg">
                     <FaHeartbeat className="text-3xl" />
                   </div>
 
