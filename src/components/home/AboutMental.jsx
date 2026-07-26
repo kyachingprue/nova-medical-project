@@ -29,10 +29,13 @@ const AboutMental = () => {
         </div>
       </div>
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 80 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+        transition={{
+          duration: 0.8,
+          ease: [0.22, 1, 0.36, 1] 
+        }}
         className="flex-1/2 w-full px-4"
       >
         {/* Section Title */}
